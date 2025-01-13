@@ -4,7 +4,6 @@ import axios from 'axios';
 import withLayoutBasic from '../../libs/components/layout/LayoutBasic';
 import GalleryCard from '../../libs/components/gallery/GalleryCard';
 import Blog from '../../libs/components/gallery/Blog';
-
 const GalleryPage = () => {
   
   return (
@@ -17,9 +16,9 @@ const GalleryPage = () => {
           Search and download any images within a second
         </Typography>
           <Grid container spacing={2}>
-              <Grid item xs={12} sm={6} md={4}>
-                <GalleryCard/>
+              <Grid item xs={12} sm={6} md={4}>              
                 <Blog />
+                <GalleryCard/>
               </Grid>
           </Grid>
       </Stack>

@@ -7,11 +7,8 @@
 export enum PropertyType {
 	SEDAN = 'SEDAN', // Sedan
 	SUV = 'SUV', // SUV (Sport Utility Vehicle)
-	COUPE = 'KUPÉ', // Kupe
-	CONVERTIBLE = 'AYLANUVCHAN', // Aylanadigan tomli mashina
-	HATCHBACK = 'HATCHBEK', // Hatchbek
-	TRUCK = 'YUKAVTO', // Yuk avtomobili
-	VAN = 'MINIVAN', // Minivan
+	CONVERTIBLE = 'CONVERTIBLE ', // Aylanadigan tomli mashina
+	TRUCK = 'TRUCK', // Yuk avtomobili
 }
 
 export enum PropertyStatus {

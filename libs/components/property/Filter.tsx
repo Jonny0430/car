@@ -642,7 +642,7 @@ const Filter = (props: FilterType) => {
 							}}
 							onClick={() => propertyRoomSelectHandler(1)}
 						>
-							1
+							
 						</Button>
 						<Button
 							sx={{
@@ -652,7 +652,7 @@ const Filter = (props: FilterType) => {
 							}}
 							onClick={() => propertyRoomSelectHandler(2)}
 						>
-							2
+							
 						</Button>
 						<Button
 							sx={{
@@ -662,7 +662,7 @@ const Filter = (props: FilterType) => {
 							}}
 							onClick={() => propertyRoomSelectHandler(3)}
 						>
-							3
+						
 						</Button>
 						<Button
 							sx={{
@@ -673,7 +673,7 @@ const Filter = (props: FilterType) => {
 							}}
 							onClick={() => propertyRoomSelectHandler(4)}
 						>
-							4
+							
 						</Button>
 						<Button
 							sx={{
@@ -682,7 +682,7 @@ const Filter = (props: FilterType) => {
 							}}
 							onClick={() => propertyRoomSelectHandler(5)}
 						>
-							5+
+							
 						</Button>
 					</Stack>
 				</Stack>

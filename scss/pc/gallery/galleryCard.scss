@@ -189,6 +189,7 @@
               background-repeat: no-repeat;
               background-position: center;
               transition: transform 0.3s ease;
+
             }
           
             &:hover .featured-img {
@@ -231,7 +232,7 @@
           
           .mb-30 {
             margin-bottom: 30px;
-          }          
+          }
       }
     }
 }

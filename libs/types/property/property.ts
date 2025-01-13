@@ -21,7 +21,8 @@ export interface Property {
 	propertyPrice: number;
 	propertySquare: number;
 	propertyBeds: number;
-	propertyRooms: number;
+	// propertyRooms: number;
+	propertyRooms: string;
 	propertyViews: number;
 	propertyLikes: number;
 	propertyComments: number;

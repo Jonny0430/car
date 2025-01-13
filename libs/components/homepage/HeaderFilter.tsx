@@ -11,6 +11,7 @@ import { PropertyLocation, PropertyType } from '../../enums/property.enum';
 import { PropertiesInquiry } from '../../types/property/property.input';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
+import { Color } from 'three';
 
 const style = {
 	position: 'absolute' as 'absolute',
@@ -373,6 +374,16 @@ const HeaderFilter = (props: HeaderFilterProps) => {
 					</div>
 
 					<div className={`filter-rooms ${openRooms ? 'on' : ''}`} ref={roomsRef}>
+						{["red", "yellow", "blue", "whit"].map((color: string) => {
+							return (
+								<span onClick={() => propertyRoomSelectHandler(color)} key={color}>
+									{color} color{color > "Color" ? 's' : ''}
+								</span>
+							);
+						})}
+					</div>
+
+                    {/* <div className={`filter-rooms ${openRooms ? 'on' : ''}`} ref={roomsRef}>
 						{[1, 2, 3, 4, 5].map((room: number) => {
 							return (
 								<span onClick={() => propertyRoomSelectHandler(room)} key={room}>
@@ -380,7 +391,7 @@ const HeaderFilter = (props: HeaderFilterProps) => {
 								</span>
 							);
 						})}
-					</div>
+					</div> */}
 				</Stack>
 
 				{/* ADVANCED FILTER MODAL */}

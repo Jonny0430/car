@@ -10,29 +10,29 @@ interface EventData {
 }
 const eventsData: EventData[] = [
 	{
-		eventTitle: 'Paradise City Theme Park',
-		city: 'Incheon',
-		description:
-			'Experience magic and wonder in Incheon with a visit to the night-themed indoor theme park Wonderbox at Paradise City!',
-		imageSrc: '/img/events/INCHEON.webp',
+			eventTitle: 'Speed Racing Championship',
+			city: 'Seoul',
+			description:
+			  'Get ready for a thrilling experience at the Speed Racing Championship in Seoul! Witness high-speed cars race through the streets of the city under neon lights at night.',
+			imageSrc: '/img/events/INCHEON.webp', // Replace with the path to your car image
 	},
 	{
-		eventTitle: 'Taebaeksan Snow Festival',
+		eventTitle: 'Futuristic Car Racing Championship',
 		city: 'Seoul',
-		description: 'If you have the opportunity to travel to South Korea, do not miss the Taebaeksan Snow Festival!',
-		imageSrc: '/img/events/SEOUL.webp',
+		description:'If you are a fan of high-speed cars, don\'t miss the Futuristic Car Racing Championship in Seoul! Watch sleek, modern cars race through neon-lit streets at night, showcasing cutting-edge automotive technology.',
+		imageSrc: '/img/events/SEOUL.webp', 
 	},
 	{
-		eventTitle: 'Suseong Lake Event',
-		city: 'Daegu',
-		description: 'The Suseong Lake Festival is a culture and arts festival held alongside Suseongmot Lake!',
-		imageSrc: '/img/events/DAEGU.webp',
+		eventTitle: 'Luxury Car Exhibition',
+        city: 'Daegu',
+        description:'The Luxury Car Exhibition is a stunning display of high-end, futuristic vehicles held alongside the scenic Suseong Lake in Daegu. Experience the elegance and performance of the latest luxury cars from around the world.',
+        imageSrc: '/img/events/DAEGU.webp', 
 	},
 	{
-		eventTitle: 'Sand Festival',
+		eventTitle: 'Futuristic Car Showcase',
 		city: 'Busan',
 		description:
-			'Haeundae Sand Festival, the nation’s largest eco-friendly exhibition on sand, is held at Haeundae Beach!',
+		  'The Futuristic Car Showcase is an exciting event showcasing the latest in high-tech, eco-friendly vehicles, held on the beautiful Haeundae Beach in Busan. See the cutting-edge designs and innovations of tomorrow’s cars, all under the sun and the open sky!',
 		imageSrc: '/img/events/BUSAN.webp',
 	},
 ];
