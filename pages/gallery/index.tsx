@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Box, Button, TextField, Grid, Typography, CircularProgress, Container, Stack } from '@mui/material';
 import axios from 'axios';
 import withLayoutBasic from '../../libs/components/layout/LayoutBasic';
-import GalleryCard from '../../libs/components/gallery/GalleryCard';
+// import GalleryCard from '../../libs/components/gallery/GalleryCard';
 import Blog from '../../libs/components/gallery/Blog';
 const GalleryPage = () => {
   
@@ -18,7 +18,7 @@ const GalleryPage = () => {
           <Grid container spacing={2}>
               <Grid item xs={12} sm={6} md={4}>              
                 <Blog />
-                <GalleryCard/>
+                {/* <GalleryCard/> */}
               </Grid>
           </Grid>
       </Stack>

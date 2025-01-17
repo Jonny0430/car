@@ -60,7 +60,7 @@
             letter-spacing: 0.42px;
             &.active {
               border: 1px solid #725CE8;
-              background: #EB6753;
+              background: #175d10;
               color: #FFF;
             }
           }
@@ -119,8 +119,8 @@
                 div {
                   padding: 6px 9px;
                   border-radius: 12px;
-                  border: 1px solid #EB6753;
-                  color: #EB6753;
+                  border: 1px solid #175d10;
+                  color: #175d10;
                   font-family: $font;
                   font-size: 12px;
                   font-style: normal;
@@ -204,7 +204,7 @@
             }
             .question {
               .badge {
-                background: #e92C28;
+                background: #175d10;
                 color: #fff;
               }
             }
@@ -215,8 +215,8 @@
               align-items: center;
               flex-direction: row;
               .badge {
-                color: #EB6753;
-                border: 1px solid #EB6753;
+                color: #bd3b10;
+                border: 1px solid #bd3b10;
               }
             }
           }

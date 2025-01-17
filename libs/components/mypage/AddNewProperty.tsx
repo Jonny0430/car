@@ -324,7 +324,7 @@ const AddProperty = ({ initialValues, ...props }: any) => {
 
 							<Stack className="config-row">
 								<Stack className="price-year-after-price">
-									<Typography className="title">Rooms</Typography>
+									<Typography className="title">Passenger Capacity</Typography>
 									<select
 										className={'select-description'}
 										value={insertPropertyData.propertyRooms || 'select'}
@@ -336,7 +336,7 @@ const AddProperty = ({ initialValues, ...props }: any) => {
 										<option disabled={true} selected={true} value={'select'}>
 											Select
 										</option>
-										{[1, 2, 3, 4, 5].map((room: number) => (
+										{[1, 2, 3, 4,].map((room: number) => (
 											<option value={`${room}`}>{room}</option>
 										))}
 									</select>
@@ -344,7 +344,7 @@ const AddProperty = ({ initialValues, ...props }: any) => {
 									<img src={'/img/icons/Vector.svg'} className={'arrow-down'} />
 								</Stack>
 								<Stack className="price-year-after-price">
-									<Typography className="title">Bed</Typography>
+									<Typography className="title">Doors</Typography>
 									<select
 										className={'select-description'}
 										value={insertPropertyData.propertyBeds || 'select'}
@@ -356,7 +356,7 @@ const AddProperty = ({ initialValues, ...props }: any) => {
 										<option disabled={true} selected={true} value={'select'}>
 											Select
 										</option>
-										{[1, 2, 3, 4, 5].map((bed: number) => (
+										{[ 2,4,].map((bed: number) => (
 											<option value={`${bed}`}>{bed}</option>
 										))}
 									</select>
@@ -364,7 +364,7 @@ const AddProperty = ({ initialValues, ...props }: any) => {
 									<img src={'/img/icons/Vector.svg'} className={'arrow-down'} />
 								</Stack>
 								<Stack className="price-year-after-price">
-									<Typography className="title">Square</Typography>
+									<Typography className="title">Engine Capacity</Typography>
 									<select
 										className={'select-description'}
 										value={insertPropertyData.propertySquare || 'select'}

@@ -28,57 +28,57 @@ const withLayoutBasic = (Component: any) => {
 				bgImage = '';
 
 			switch (router.pathname) {
-				case '/property':
-					title = 'Property Search';
-					desc = 'We are glad to see you again!';
-					bgImage = '/img/car/car6.jpg';
-					break;
-				case '/agent':
-					title = 'Agents';
-					desc = 'Home / For Rent';
-					bgImage = '/img/banner/agents.webp';
-					break;
-				case '/gallery':
-					title = 'Gallery';
-					desc = 'Home / For Rent';
-					bgImage = '/img/banner/agents.webp';
-					break;
-				case '/agent/detail':
-					title = 'Agent Page';
-					desc = 'Home / For Rent';
-					bgImage = '/img/banner/header2.svg';
-					break;
-				case '/mypage':
-					title = 'my page';
-					desc = 'Home / For Rent';
-					bgImage = '/img/banner/header1.svg';
-					break;
-				case '/community':
-					title = 'Community';
-					desc = 'Home / For Rent';
-					bgImage = '/img/banner/header2.svg';
-					break;
-				case '/community/detail':
-					title = 'Community Detail';
-					desc = 'Home / For Rent';
-					bgImage = '/img/banner/header2.svg';
-					break;
-				case '/cs':
-					title = 'CS';
-					desc = 'We are glad to see you again!';
-					bgImage = '/img/banner/header2.svg';
-					break;
+				// case '/property':
+				// 	title = 'Property Search';
+				// 	desc = 'We are glad to see you again!';
+				// 	bgImage = 'https://storage.googleapis.com/pod_public/1300/121017.jpg';
+				// 	break;
+				// case '/agent':
+				// 	title = 'Agents';
+				// 	desc = 'Home / For Rent';
+				// 	bgImage = '/img/banner/agents.webp';
+				// 	break;
+				// case '/gallery':
+				// 	title = 'Gallery';
+				// 	desc = 'Home / For Rent';
+				// 	bgImage = '/img/banner/agents.webp';
+				// 	break;
+				// case '/agent/detail':
+				// 	title = 'Agent Page';
+				// 	desc = 'Home / For Rent';
+				// 	bgImage = '/img/banner/header2.svg';
+				// 	break;
+				// case '/mypage':
+				// 	title = 'my page';
+				// 	desc = 'Home / For Rent';
+				// 	bgImage = '/img/banner/header1.svg';
+				// 	break;
+				// case '/community':
+				// 	title = 'Community';
+				// 	desc = 'Home / For Rent';
+				// 	bgImage = '/img/banner/header2.svg';
+				// 	break;
+				// case '/community/detail':
+				// 	title = 'Community Detail';
+				// 	desc = 'Home / For Rent';
+				// 	bgImage = '/img/banner/header2.svg';
+				// 	break;
+				// case '/cs':
+				// 	title = 'CS';
+				// 	desc = 'We are glad to see you again!';
+				// 	bgImage = '/img/banner/header2.svg';
+				// 	break;
 				case '/account/join':
 					title = 'Login/Signup';
 					desc = 'Authentication Process';
-					bgImage = '/img/banner/header2.svg';
+					bgImage = '/img/car/m1.webp';
 					setAuthHeader(true);
 					break;
-				case '/member':
-					title = 'Member Page';
-					desc = 'Home / For Rent';
-					bgImage = '/img/banner/header1.svg';
-					break;
+				// case '/member':
+				// 	title = 'Member Page';
+				// 	desc = 'Home / For Rent';
+				// 	bgImage = '/img/car/cars.webp.webp';
+				// 	break;
 				default:
 					break;
 			}
@@ -98,7 +98,7 @@ const withLayoutBasic = (Component: any) => {
 			return (
 				<>
 					<Head>
-						<title>Car</title>
+						<title>DriveX</title>
 						<meta name={'title'} content={`Car`} />
 					</Head>
 					<Stack id="mobile-wrap">
@@ -120,7 +120,7 @@ const withLayoutBasic = (Component: any) => {
 			return (
 				<>
 					<Head>
-						<title>Car</title>
+						<title>DriveX</title>
 						<meta name={'title'} content={`Car`} />
 					</Head>
 					<Stack id="pc-wrap">

@@ -259,13 +259,13 @@ const AgentDetail: NextPage = ({ initialInput, initialComment, ...props }: any) 
 									return <ReviewCard comment={comment} key={comment?._id} />;
 								})}
 								<Box component={'div'} className={'pagination-box'}>
-									<Pagination
+									 <Pagination
 										page={commentInquiry.page}
 										count={Math.ceil(commentTotal / commentInquiry.limit) || 1}
 										onChange={commentPaginationChangeHandler}
 										shape="circular"
 										color="primary"
-									/>
+									/> 
 								</Box>
 							</Stack>
 						)}

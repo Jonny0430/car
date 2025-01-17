@@ -690,7 +690,7 @@
 							align-items: center;
 							gap: 10px;
 							border-radius: 12px;
-							background: #eb6753;
+							background: #0a924d;
 							.title {
 								color: #fff;
 								font-family: $font;
@@ -750,7 +750,21 @@
 						}
 					}
 				}
+				.ouraddress {
+					    color: #181a20;
+						font-family: "Poppins", sans-serif;
+						font-size: 30px;
+						font-style: normal;
+						font-weight: 600;
+						line-height: normal;
+						letter-spacing: 0.6px;
+						text-transform: capitalize;
+                    }
+					.index.follow {
+						border-radius: 50px;
+					}
+				}
 			}
 		}
 	}
-}
+

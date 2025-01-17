@@ -25,7 +25,7 @@ const PropertyCard = (props: PropertyCardType) => {
 	const user = useReactiveVar(userVar);
 	const imagePath: string = property?.propertyImages[0]
 		? `${REACT_APP_API_URL}/${property?.propertyImages[0]}`
-		: '/img/banner/header1.svg';
+		: '/img/car/carlogo1.avif';
 
 	if (device === 'mobile') {
 		return <div>PROPERTY CARD</div>;
@@ -70,15 +70,6 @@ const PropertyCard = (props: PropertyCardType) => {
 						</Stack>
 					</Stack>
 					<Stack className="options">
-						<Stack className="option">
-							<img src="/img/icons/bed.svg" alt="" /> <Typography>{property.propertyBeds} bed</Typography>
-						</Stack>
-						<Stack className="option">
-							<img src="/img/icons/room.svg" alt="" /> <Typography>{property.propertyRooms} room</Typography>
-						</Stack>
-						<Stack className="option">
-							<img src="/img/icons/expand.svg" alt="" /> <Typography>{property.propertySquare} m2</Typography>
-						</Stack>
 					</Stack>
 					<Stack className="divider"></Stack>
 					<Stack className="type-buttons">

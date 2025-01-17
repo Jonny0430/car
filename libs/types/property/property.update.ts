@@ -10,8 +10,7 @@ export interface PropertyUpdate {
 	propertyPrice?: number;
 	propertySquare?: number;
 	propertyBeds?: number;
-	// propertyRooms?: number;
-	propertyRooms?: string;
+	propertyRooms?: number;
 	propertyImages?: string[];
 	propertyDesc?: string;
 	propertyBarter?: boolean;

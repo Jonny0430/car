@@ -1,99 +1,11 @@
-// import { Box, Stack, Grid, Typography } from "@mui/material";
-// import React from "react";
-
-// export default function Blog() {
-//   return (
-//     <Stack spacing={3}>
-//       <Box className="category-title">
-//         <Typography variant="h4">Blog Menu</Typography>
-//       </Box>
-//       <Box className="container homepage">
-//         <Grid container spacing={2}>
-//           {/* First Column */}
-//           <Grid item xs={12} sm={6} md={4}>
-//             <a href="/property" className="h-entry mb-30 v-height gradient">
-//               <Box
-//                 className="featured-img"
-//                 sx={{
-//                   backgroundImage:
-//                     "url(https://thumbs.dreamstime.com/b/happy-person-enjoying-talking-friends-phone-call-studio-background-joyous-man-positive-emotion-using-smartphone-smile-332775166.jpg)",
-//                   backgroundSize: "cover",
-//                   height: 200,
-//                 }}
-//               ></Box>
-//             </a>
-
-//             <a href="/property" className="h-entry v-height gradient">
-//               <Box
-//                 className="featured-img"
-//                 sx={{
-//                   backgroundImage:
-//                     "url('https://pyxis.nymag.com/v1/imgs/86a/a93/83982fa459a9b1df445fb6e10b2a4fb71b-phone-anxiety.1x.rsquare.w1400.jpg')",
-//                   backgroundSize: "cover",
-//                   height: 200,
-//                 }}
-//               ></Box>
-//             </a>
-//           </Grid>
-
-//           {/* Second Column */}
-//           <Grid item xs={12} sm={6} md={4}>
-//             <a href="/property" className="h-entry img-5 h-100 gradient">
-//               <Box
-//                 className="featured-img"
-//                 sx={{
-//                   backgroundImage:
-//                     "url('https://images.ctfassets.net/ho7m10evquwz/4m6wjtz4Eq9LHlBSOwXKIS/492642238930438507b9086cd8985e13/young-handsome-man-smiling-cheerfully-pointing-front-while-making-call-you-later-gesture-talking-phone.jpg?w=2400&q=75&fm=webp')",
-//                   backgroundSize: "cover",
-//                   height: 200,
-//                 }}
-//               ></Box>
-//             </a>
-//           </Grid>
-
-//           {/* Third Column */}
-//           <Grid item xs={12} sm={6} md={4}>
-//             <a href="/property" className="h-entry mb-30 v-height gradient">
-//               <Box
-//                 className="featured-img"
-//                 sx={{
-//                   backgroundImage:
-//                     "url('https://www.shutterstock.com/image-photo/indoor-view-happy-woman-man-600nw-1431453284.jpg')",
-//                   backgroundSize: "cover",
-//                   height: 200,
-//                 }}
-//               >
-//               </Box>
-//             </a>
-
-//             <a href="/property" className="h-entry v-height gradient">
-//               <Box
-//                 className="featured-img"
-//                 sx={{
-//                   backgroundImage:
-//                     "url('https://www.dexcomm.com/hubfs/make%20customers%20happy%20over%20the%20phone.png')",
-//                   backgroundSize: "cover",
-//                   height: 200,
-//                 }}
-//               ></Box>
-//             </a>
-//           </Grid>
-//         </Grid>
-//       </Box>
-//     </Stack>
-//   );
-// }
-
-import { Padding } from "@mui/icons-material";
 import { Box, Stack, Grid, Typography, Card, CardContent } from "@mui/material";
 import React from "react";
 
 export default function Blog() {
   return (
     <Stack spacing={3}>
-
       <Box className="container homepage">
-        <Grid container spacing={3} >
+        <Grid container spacing={3}>
           {/* First Column */}
           <Grid item xs={12} sm={6} md={4}>
             <Card sx={{ borderRadius: 3, boxShadow: 3, marginBottom: 2 }}>
@@ -237,6 +149,154 @@ export default function Blog() {
               </a>
               <CardContent>
                 <Typography variant="h6">Title 6</Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Short description or details about the blog post.
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          {/* Seventh Column */}
+          <Grid item xs={12} sm={6} md={4}>
+            <Card sx={{ borderRadius: 3, boxShadow: 3, marginBottom: 2 }}>
+              <a href="/property" className="h-entry">
+                <Box
+                  className="featured-img"
+                  sx={{
+                    backgroundImage:
+                      "url('https://image.shutterstock.com/image-photo/happy-young-woman-working-phone-office-600w-1718694845.jpg')",
+                    backgroundSize: "cover",
+                    height: 200,
+                    borderTopLeftRadius: 3,
+                    borderTopRightRadius: 3,
+                  }}
+                ></Box>
+              </a>
+              <CardContent>
+                <Typography variant="h6">Title 7</Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Short description or details about the blog post.
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          {/* Eighth Column */}
+          <Grid item xs={12} sm={6} md={4}>
+            <Card sx={{ borderRadius: 3, boxShadow: 3, marginBottom: 2 }}>
+              <a href="/property" className="h-entry">
+                <Box
+                  className="featured-img"
+                  sx={{
+                    backgroundImage:
+                      "url('https://www.shutterstock.com/image-photo/portrait-happy-beautiful-woman-holding-telephone-600w-1897380273.jpg')",
+                    backgroundSize: "cover",
+                    height: 200,
+                    borderTopLeftRadius: 3,
+                    borderTopRightRadius: 3,
+                  }}
+                ></Box>
+              </a>
+              <CardContent>
+                <Typography variant="h6">Title 8</Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Short description or details about the blog post.
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <Card sx={{ borderRadius: 3, boxShadow: 3, marginBottom: 2 }}>
+              <a href="/property" className="h-entry">
+                <Box
+                  className="featured-img"
+                  sx={{
+                    backgroundImage:
+                      "url('https://www.shutterstock.com/image-photo/portrait-happy-beautiful-woman-holding-telephone-600w-1897380273.jpg')",
+                    backgroundSize: "cover",
+                    height: 200,
+                    borderTopLeftRadius: 3,
+                    borderTopRightRadius: 3,
+                  }}
+                ></Box>
+              </a>
+              <CardContent>
+                <Typography variant="h6">Title 8</Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Short description or details about the blog post.
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <Card sx={{ borderRadius: 3, boxShadow: 3, marginBottom: 2 }}>
+              <a href="/property" className="h-entry">
+                <Box
+                  className="featured-img"
+                  sx={{
+                    backgroundImage:
+                      "url('https://www.shutterstock.com/image-photo/portrait-happy-beautiful-woman-holding-telephone-600w-1897380273.jpg')",
+                    backgroundSize: "cover",
+                    height: 200,
+                    borderTopLeftRadius: 3,
+                    borderTopRightRadius: 3,
+                  }}
+                ></Box>
+              </a>
+              <CardContent>
+                <Typography variant="h6">Title 8</Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Short description or details about the blog post.
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          {/* Ninth Column */}
+          <Grid item xs={12} sm={6} md={4}>
+            <Card sx={{ borderRadius: 3, boxShadow: 3, marginBottom: 2 }}>
+              <a href="/property" className="h-entry">
+                <Box
+                  className="featured-img"
+                  sx={{
+                    backgroundImage:
+                      "url('https://www.shutterstock.com/image-photo/young-woman-holding-mobile-phone-600w-1290963920.jpg')",
+                    backgroundSize: "cover",
+                    height: 200,
+                    borderTopLeftRadius: 3,
+                    borderTopRightRadius: 3,
+                  }}
+                ></Box>
+              </a>
+              <CardContent>
+                <Typography variant="h6">Title 9</Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Short description or details about the blog post.
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          {/* Tenth Column */}
+          <Grid item xs={12} sm={6} md={4}>
+            <Card sx={{ borderRadius: 3, boxShadow: 3, marginBottom: 2 }}>
+              <a href="/property" className="h-entry">
+                <Box
+                  className="featured-img"
+                  sx={{
+                    backgroundImage:
+                      "url('https://www.shutterstock.com/image-photo/happy-female-student-working-with-laptop-600w-1744213400.jpg')",
+                    backgroundSize: "cover",
+                    height: 200,
+                    borderTopLeftRadius: 3,
+                    borderTopRightRadius: 3,
+                  }}
+                ></Box>
+              </a>
+              <CardContent>
+                <Typography variant="h6">Title 10</Typography>
                 <Typography variant="body2" color="text.secondary">
                   Short description or details about the blog post.
                 </Typography>

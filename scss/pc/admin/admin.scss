@@ -24,6 +24,7 @@
       img {
         width: 90px;
         height: 90px;
+        border-radius: 50px;
       }
     }
     .user {
@@ -161,7 +162,7 @@
           min-width: 220px;
         }
         .active {
-          color: #229a16;
+          color: #16939a;
           background: rgba(84, 214, 44, 0.16);
         }
         .warning {

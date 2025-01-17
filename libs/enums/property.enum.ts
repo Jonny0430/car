@@ -5,10 +5,12 @@
 // }
 
 export enum PropertyType {
-	SEDAN = 'SEDAN', // Sedan
-	SUV = 'SUV', // SUV (Sport Utility Vehicle)
-	CONVERTIBLE = 'CONVERTIBLE ', // Aylanadigan tomli mashina
-	TRUCK = 'TRUCK', // Yuk avtomobili
+	SKODA = 'SKODA',
+	WALLPAPER = 'WALLPAPER', 
+	MUSTANG = 'MUSTANG',
+	SPORTS = 'SPORTS',
+	MERCEDES = 'MERCEDES',
+	BMW = 'BMW',
 }
 
 export enum PropertyStatus {

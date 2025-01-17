@@ -2,15 +2,15 @@ import { PropertyLocation, PropertyStatus, PropertyType } from '../../enums/prop
 import { Direction } from '../../enums/common.enum';
 
 export interface PropertyInput {
-	propertyType: PropertyType;
+	_id: any;
+	propertyType: PropertyType | any;
 	propertyLocation: PropertyLocation;
 	propertyAddress: string;
 	propertyTitle: string;
 	propertyPrice: number;
 	propertySquare: number;
 	propertyBeds: number;
-	// propertyRooms: number;
-	propertyRooms: string;
+	propertyRooms: number;
 	propertyImages: string[];
 	propertyDesc?: string;
 	propertyBarter?: boolean;
@@ -33,9 +33,8 @@ interface PISearch {
 }
 
 export interface PropertiesInquiry {
-	page: number;
+	page: number 
 	limit: number;
-	sort?: string;
 	direction?: Direction;
 	search: PISearch;
 }

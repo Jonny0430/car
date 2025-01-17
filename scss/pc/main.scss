@@ -60,6 +60,7 @@ body::-webkit-scrollbar {
 				border-top: 1px solid rgba(255, 255, 255, 0.07);
 				&.transparent {
 					background-color: #181a209e;
+					border-radius: 70px;
 				}
 				.container {
 					flex-direction: row;
@@ -67,7 +68,8 @@ body::-webkit-scrollbar {
 					justify-content: space-between;
 					.logo-box {
 						img {
-							width: 150px;
+							border-radius: 105%;
+							width: 80px;
 							cursor: pointer;
 						}
 					}
@@ -187,13 +189,12 @@ body::-webkit-scrollbar {
 				position: relative;
 				margin-top: 56px;
 				padding: 16px 29px;
-				width: 1094px;
-				height: 96px;
+				width: 1000px;
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
 				background: rgba(255, 255, 255, 0.28);
-				border-radius: 12px;
+				border-radius: 227px;
 				.select-box {
 					width: 712px;
 					display: flex;
@@ -226,6 +227,25 @@ body::-webkit-scrollbar {
 						}
 					}
 				}
+				.property-type-item {
+					display: inline-block;
+					margin: 5px 10px;
+					padding: 5px 15px;
+					background-image: url('https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iIaErk.wR.qU/v1/-1x-1.webp');
+					background-color: #f4f4f4;
+					border-radius: 30px;
+					cursor: pointer;
+					white-space: nowrap;
+					text-align: center;
+					font-size: 14px;
+					font-weight: bold;
+				}
+				
+				.property-type-item:hover {
+					background-color: #ddd;
+				}
+				
+
 				.search-box-other {
 					display: flex;
 					flex-direction: row;
@@ -252,13 +272,14 @@ body::-webkit-scrollbar {
 					}
 					.search-btn {
 						margin-left: 12px;
-						width: 62px;
-						height: 62px;
+						width: 200px;
+						height: 57px;
 						display: flex;
 						align-items: center;
 						justify-content: center;
-						border-radius: 55px;
-						background: #f17742;
+						border-radius: 15px;
+						background: #3589e9;
+						font-size: 17px;
 						cursor: pointer;
 						svg {
 							width: 20px;
@@ -419,7 +440,7 @@ body::-webkit-scrollbar {
 		justify-content: center;
 		background: black;
 		&.auth {
-			height: 300px;
+			height: 500px;
 		}
 		.container {
 			margin-top: 175px;
@@ -661,7 +682,7 @@ body::-webkit-scrollbar {
 		display: flex;
 		flex-direction: row;
 		background-image: url("./../../public/naqish.jpg");
-		background: #144a2f;
+		background: rgb(17 24 39 / var(--tw-bg-opacity, 1));
 		.footer-container {
 			width: 1300px;
 			height: auto;

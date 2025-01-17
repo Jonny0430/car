@@ -4,8 +4,8 @@ export default function Document() {
 	return (
 		<Html lang="en">
 			<Head>
-				<meta name="robots" content="index,follow" />
-				<link rel="icon" type="image/png" href="/img/logo/favicon.svg" />
+				<meta name="robots" content="index.follow" />
+				<link rel="icon" type="image/png" href="/img/car/carlogo1.avif" />
 
 				{/* SEO */}
 				<meta name="keyword" content={'nestar, nestar.uz, devex mern, mern nestjs fullstack'} />
