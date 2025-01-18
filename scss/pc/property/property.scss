@@ -38,7 +38,7 @@
 						padding: 30px 24px;
 						border-radius: 12px;
 						background: #fff;
-						box-shadow: 0 1px 4px 0 rgba(24, 26, 32, 0.07);
+						box-shadow: 0 1px 6px 0 rgba(193, 51, 3, 0.99);
 						.find-your-home {
 							position: relative;
 							width: 100%;
@@ -212,6 +212,7 @@
 						flex-direction: row;
 						flex-wrap: wrap;
 						gap: 23px;
+						box-shadow: 0 1px 6px 0 rgba(193, 51, 3, 0.99);
 						.card-config {
 							width: 296px;
 							height: 413px;
@@ -275,6 +276,87 @@
 									}
 								}
 							}
+
+
+							// .card-config {
+							// 	.top {
+							// 	  position: relative;
+							// 	  img {
+							// 		width: 100%;
+							// 		height: auto;
+							// 		border-radius: 8px;
+							// 	  }
+							  
+							// 	  .top-badge {
+							// 		position: absolute;
+							// 		top: 10px;
+							// 		left: 10px;
+							// 		background-color: rgba(255, 255, 255, 0.7);
+							// 		padding: 5px;
+							// 		border-radius: 5px;
+							// 		display: flex;
+							// 		align-items: center;
+							  
+							// 		img {
+							// 		  width: 15px;
+							// 		  margin-right: 5px;
+							// 		}
+							// 	  }
+							  
+							// 	  .price-box {
+							// 		background-color: #fff;
+							// 		padding: 10px;
+							// 		border-radius: 5px;
+							// 		position: absolute;
+							// 		bottom: 10px;
+							// 		right: 10px;
+							// 		background-color: rgba(255, 255, 255, 0.8);
+							// 	  }
+							// 	}
+							  
+							// 	.bottom {
+							// 	  padding: 15px;
+							// 	  .name-address {
+							// 		.name {
+							// 		  font-size: 16px;
+							// 		  font-weight: bold;
+							// 		}
+							  
+							// 		.address {
+							// 		  font-size: 14px;
+							// 		  color: #999;
+							// 		}
+							// 	  }
+							  
+							// 	  .options {
+							// 		margin-top: 15px;
+							// 	  }
+							  
+							// 	  .divider {
+							// 		margin-top: 20px;
+							// 		border-bottom: 1px solid #ddd;
+							// 	  }
+							  
+							// 	  .type-buttons {
+							// 		display: flex;
+							// 		justify-content: space-between;
+							// 		align-items: center;
+							  
+							// 		.buttons {
+							// 		  display: flex;
+							// 		  align-items: center;
+							  
+							// 		  .view-cnt {
+							// 			margin-left: 5px;
+							// 			font-size: 14px;
+							// 		  }
+							// 		}
+							// 	  }
+							// 	}
+							//   }
+							  
+
+
 							.bottom {
 								width: 100%;
 								height: 173px;

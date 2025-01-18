@@ -77,12 +77,6 @@ const PopularProperties = (props: PopularPropertiesProps) => {
 							<p>Popularity is based on views</p>
 						</Box>
 						<Box component={'div'} className={'right'}>
-							<div className={'more-box'}>
-								<Link href={'/property'}>
-									<span>See All Categories</span>
-								</Link>
-								<img src="/img/icons/rightup.svg" alt="" />
-							</div>
 						</Box>
 					</Stack>
 					<Stack className={'card-box'}>

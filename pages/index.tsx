@@ -13,7 +13,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import LatestNews from '../libs/components/homepage/LatestNews';
 import ImageGallery from '../libs/components/homepage/ImageGallery';
 
-
 export const getStaticProps = async ({ locale }: any) => ({
 	props: {
 		...(await serverSideTranslations(locale, ['common'])),

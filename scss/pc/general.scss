@@ -173,18 +173,18 @@
 	flex-direction: column;
 	.agent-img {
 		border-radius: 12px;
-		width: 233px;
-		height: 273px;
+		width: 260px;
+		height: 270px;
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		cursor: pointer;
 		div {
 			position: absolute;
-			padding: 12px;
+			padding: 5px;
 			top: 12px;
 			left: 12px;
-			border-radius: 6px;
-			background: #eb6753;
+			border-radius: 9px;
+			background: #06aaa2;
 			color: #fff;
 			font-family: $font;
 			font-size: 12px;

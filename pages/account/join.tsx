@@ -176,7 +176,7 @@ const Join: NextPage = () => {
 										LOGIN
 									</Button>
 								) : (
-									<Button
+									<Button 
 										variant="contained"
 										disabled={input.nick == '' || input.password == '' || input.phone == '' || input.type == ''}
 										onClick={doSignUp}

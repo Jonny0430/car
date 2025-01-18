@@ -3,11 +3,11 @@ import React from "react";
 
 export default function Blog() {
   return (
-    <Stack spacing={3}>
-      <Box className="container homepage">
-        <Grid container spacing={3}>
+    <Stack className="container homepage" spacing={3}>
+      <Box className="container homepag" sx={{background: '#f6f6f6'}}>
+        <Grid container spacing={3} sx={{background: '#f6f6f6'}}>
           {/* First Column */}
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={4} sx={{background: '#f6f6f6'}}>
             <Card sx={{ borderRadius: 3, boxShadow: 3, marginBottom: 2 }}>
               <a href="/property" className="h-entry">
                 <Box
@@ -22,7 +22,7 @@ export default function Blog() {
                   }}
                 ></Box>
               </a>
-              <CardContent>
+              <CardContent >
                 <Typography variant="h6">Title 1</Typography>
                 <Typography variant="body2" color="text.secondary">
                   Short description or details about the blog post.
@@ -33,7 +33,7 @@ export default function Blog() {
 
           {/* Second Column */}
           <Grid item xs={12} sm={6} md={4}>
-            <Card sx={{ borderRadius: 3, boxShadow: 3, marginBottom: 2 }}>
+            <Card sx={{ borderRadius: 3, boxShadow: 3, marginBottom: 2, background: '#f6f6f6' }}>
               <a href="/property" className="h-entry">
                 <Box
                   className="featured-img"
@@ -308,4 +308,3 @@ export default function Blog() {
     </Stack>
   );
 }
-
