@@ -14,7 +14,7 @@ export default function Blog() {
                   className="featured-img"
                   sx={{
                     backgroundImage:
-                      "url(https://thumbs.dreamstime.com/b/happy-person-enjoying-talking-friends-phone-call-studio-background-joyous-man-positive-emotion-using-smartphone-smile-332775166.jpg)",
+                      "url(https://www.gazeta.uz/sp/24139844/img/tild3564-3237-4930-a434-633763393633__img_6354-1920.jpg)",
                     backgroundSize: "cover",
                     height: 200,
                     borderTopLeftRadius: 3,
@@ -25,7 +25,8 @@ export default function Blog() {
               <CardContent >
                 <Typography variant="h6">Title 1</Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Short description or details about the blog post.
+                These are classic Lada cars, with the green model being a modified version. 
+                The Lada 2101 series, popular in the Soviet Union and beyond, is known for its simplicity and durability.
                 </Typography>
               </CardContent>
             </Card>
@@ -39,7 +40,7 @@ export default function Blog() {
                   className="featured-img"
                   sx={{
                     backgroundImage:
-                      "url('https://pyxis.nymag.com/v1/imgs/86a/a93/83982fa459a9b1df445fb6e10b2a4fb71b-phone-anxiety.1x.rsquare.w1400.jpg')",
+                      "url('https://www.gazeta.uz/sp/24139844/img/tild3032-6237-4261-a131-353139656631__29103531_20656146567.jpg')",
                     backgroundSize: "cover",
                     height: 200,
                     borderTopLeftRadius: 3,
@@ -50,7 +51,8 @@ export default function Blog() {
               <CardContent>
                 <Typography variant="h6">Title 2</Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Short description or details about the blog post.
+                This is a Jaguar XJ, a luxury sedan known for its elegance and performance. 
+                The car is a classic example of British automotive design, offering a smooth driving experience and stylish looks.
                 </Typography>
               </CardContent>
             </Card>
@@ -64,7 +66,7 @@ export default function Blog() {
                   className="featured-img"
                   sx={{
                     backgroundImage:
-                      "url('https://images.ctfassets.net/ho7m10evquwz/4m6wjtz4Eq9LHlBSOwXKIS/492642238930438507b9086cd8985e13/young-handsome-man-smiling-cheerfully-pointing-front-while-making-call-you-later-gesture-talking-phone.jpg?w=2400&q=75&fm=webp')",
+                      "url('https://i0.wp.com/s.auto.drom.ru/i24202/pubs/4483/47927/2469755.jpg')",
                     backgroundSize: "cover",
                     height: 200,
                     borderTopLeftRadius: 3,
@@ -75,7 +77,8 @@ export default function Blog() {
               <CardContent>
                 <Typography variant="h6">Title 3</Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Short description or details about the blog post.
+                This is a modified 1940s Chevrolet truck, customized with unique features such as oversized tires and a distinctive rear setup, giving it a vintage yet sporty look. 
+                It's a classic example of car customization, blending retro design with modern modifications.
                 </Typography>
               </CardContent>
             </Card>
@@ -89,7 +92,7 @@ export default function Blog() {
                   className="featured-img"
                   sx={{
                     backgroundImage:
-                      "url('https://www.shutterstock.com/image-photo/indoor-view-happy-woman-man-600nw-1431453284.jpg')",
+                      "url('https://www.gazeta.uz/sp/24139844/img/tild3766-3266-4734-a537-663438356639__37414729_22465229187.jpg')",
                     backgroundSize: "cover",
                     height: 200,
                     borderTopLeftRadius: 3,
@@ -100,7 +103,8 @@ export default function Blog() {
               <CardContent>
                 <Typography variant="h6">Title 4</Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Short description or details about the blog post.
+                This is a 1960s Volga GAZ-21, a Soviet-era car known for its stylish design and durability. 
+                It became an iconic vehicle of the time, widely used for both personal and official purposes.
                 </Typography>
               </CardContent>
             </Card>
@@ -114,7 +118,7 @@ export default function Blog() {
                   className="featured-img"
                   sx={{
                     backgroundImage:
-                      "url('https://www.dexcomm.com/hubfs/make%20customers%20happy%20over%20the%20phone.png')",
+                      "url('https://daryo.uz/cache/2017/07/8730a53fb4b75713be0ec9d4cb91ddaa84c197b6-680x453.jpg')",
                     backgroundSize: "cover",
                     height: 200,
                     borderTopLeftRadius: 3,
@@ -125,7 +129,8 @@ export default function Blog() {
               <CardContent>
                 <Typography variant="h6">Title 5</Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Short description or details about the blog post.
+                This is a 1915 Ford Model T, one of the first mass-produced cars. 
+                It revolutionized the automobile industry by making cars affordable and accessible to the general public.
                 </Typography>
               </CardContent>
             </Card>
@@ -139,7 +144,7 @@ export default function Blog() {
                   className="featured-img"
                   sx={{
                     backgroundImage:
-                      "url('https://www.shutterstock.com/image-photo/close-shot-happy-business-woman-standing-600nw-1552824742.jpg')",
+                      "url('https://www.avtotachki.com/wp-content/uploads/2020/11/honda_accord_721767.jpg')",
                     backgroundSize: "cover",
                     height: 200,
                     borderTopLeftRadius: 3,
@@ -150,7 +155,8 @@ export default function Blog() {
               <CardContent>
                 <Typography variant="h6">Title 6</Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Short description or details about the blog post.
+                This is a 1970s Honda Civic, a compact car that became a symbol of reliability and fuel efficiency. 
+                It was an influential model in Honda's growth, offering a practical solution for everyday transportation.
                 </Typography>
               </CardContent>
             </Card>
@@ -164,7 +170,7 @@ export default function Blog() {
                   className="featured-img"
                   sx={{
                     backgroundImage:
-                      "url('https://image.shutterstock.com/image-photo/happy-young-woman-working-phone-office-600w-1718694845.jpg')",
+                      "url('https://storage.kun.uz/source/9/k84CF_bU1fZQZVMjepWb9-zCBnCUTvde.jpg')",
                     backgroundSize: "cover",
                     height: 200,
                     borderTopLeftRadius: 3,
@@ -175,7 +181,8 @@ export default function Blog() {
               <CardContent>
                 <Typography variant="h6">Title 7</Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Short description or details about the blog post.
+                This is a 1970s Honda Civic, a compact and affordable car that became,
+                 highly popular for its efficiency and reliability. It played a significant role in shaping the compact car market.
                 </Typography>
               </CardContent>
             </Card>
@@ -189,7 +196,7 @@ export default function Blog() {
                   className="featured-img"
                   sx={{
                     backgroundImage:
-                      "url('https://www.shutterstock.com/image-photo/portrait-happy-beautiful-woman-holding-telephone-600w-1897380273.jpg')",
+                      "url('https://www.gazeta.uz/media/img/2022/12/zBIiy316708374410650_b.jpg')",
                     backgroundSize: "cover",
                     height: 200,
                     borderTopLeftRadius: 3,
@@ -200,7 +207,10 @@ export default function Blog() {
               <CardContent>
                 <Typography variant="h6">Title 8</Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Short description or details about the blog post.
+                This is a 1910 Rolls-Royce Silver Ghost, a luxury car known,
+                 for its elegance and craftsmanship.
+                 It was one of the most prestigious vehicles of its time,
+                  offering exceptional performance and comfort.
                 </Typography>
               </CardContent>
             </Card>
@@ -213,7 +223,7 @@ export default function Blog() {
                   className="featured-img"
                   sx={{
                     backgroundImage:
-                      "url('https://www.shutterstock.com/image-photo/portrait-happy-beautiful-woman-holding-telephone-600w-1897380273.jpg')",
+                      "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvnK9f1hDMp0dQH-DHejMFm2RHKLeYv8H4XBuKPsQvDZfSZvxplAw3wrOBvKcuQDceQZ4&usqp=CAU')",
                     backgroundSize: "cover",
                     height: 200,
                     borderTopLeftRadius: 3,
@@ -224,7 +234,7 @@ export default function Blog() {
               <CardContent>
                 <Typography variant="h6">Title 8</Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Short description or details about the blog post.
+                This is a Datsun Skyline C210, produced in the 1970s. It is known for its sporty design and was a popular choice among car enthusiasts. The model is part of the Skyline series, which became famous for its performance and legacy.
                 </Typography>
               </CardContent>
             </Card>
@@ -237,7 +247,7 @@ export default function Blog() {
                   className="featured-img"
                   sx={{
                     backgroundImage:
-                      "url('https://www.shutterstock.com/image-photo/portrait-happy-beautiful-woman-holding-telephone-600w-1897380273.jpg')",
+                      "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREkr2O-YgnogKl_PFss2vofbBByx6DfqEz85D0r4vPEMsZ8OIZIq3Nt10cUbXt5a5OHeo&usqp=CAU')",
                     backgroundSize: "cover",
                     height: 200,
                     borderTopLeftRadius: 3,
@@ -248,7 +258,9 @@ export default function Blog() {
               <CardContent>
                 <Typography variant="h6">Title 8</Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Short description or details about the blog post.
+                This is a 1930 Duesenberg Model J, a luxury car known for its elegant,
+                 design and powerful engine.
+                 It was one of the most prestigious and expensive cars of its time.
                 </Typography>
               </CardContent>
             </Card>
@@ -262,7 +274,7 @@ export default function Blog() {
                   className="featured-img"
                   sx={{
                     backgroundImage:
-                      "url('https://www.shutterstock.com/image-photo/young-woman-holding-mobile-phone-600w-1290963920.jpg')",
+                      "url('https://daryo.uz/cache/2021/10/9B9A7286-1300x867.jpg')",
                     backgroundSize: "cover",
                     height: 200,
                     borderTopLeftRadius: 3,
@@ -273,7 +285,11 @@ export default function Blog() {
               <CardContent>
                 <Typography variant="h6">Title 9</Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Short description or details about the blog post.
+                This is the Opel Super 6 model, produced in the 1930s.
+                 The Opel Super 6 stood out with the advanced,
+                  technologies and modern design of its time.
+                 
+
                 </Typography>
               </CardContent>
             </Card>
@@ -287,7 +303,7 @@ export default function Blog() {
                   className="featured-img"
                   sx={{
                     backgroundImage:
-                      "url('https://www.shutterstock.com/image-photo/happy-female-student-working-with-laptop-600w-1744213400.jpg')",
+                      "url('https://choynakningqopqogi.uz/wp-content/uploads/2024/09/image-37-edited.png')",
                     backgroundSize: "cover",
                     height: 200,
                     borderTopLeftRadius: 3,
@@ -298,7 +314,8 @@ export default function Blog() {
               <CardContent>
                 <Typography variant="h6">Title 10</Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Short description or details about the blog post.
+                This is a Bentley T-Series model produced in the 1970s. The Bentley T-Series was introduced in 1965,
+                 known for its modern design, luxurious interior, and powerful V8 engine.
                 </Typography>
               </CardContent>
             </Card>

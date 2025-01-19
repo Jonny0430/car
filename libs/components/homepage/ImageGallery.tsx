@@ -15,12 +15,12 @@ const ImageGallery = () => {
   if (!isMounted) return null; // Agar client-sideda bo'lmasa, componentni render qilmang
 
   const images = [
-    { id: 1, src: '../img/car/cars.jpeg', title:"" , disconnect:"" },
-    { id: 2, src: '../img/car/cars.webp' },
-    { id: 3, src: '../img/car/cars1.webp' },
-    { id: 4, src: '../img/car/cars2.webp' },
-    {id: 5, src: '../img/car/cars3.webp' },
-    {id: 6, src: '../img/car/cars4.webp' },
+    { id: 1, src: 'https://mclaren.scene7.com/is/image/mclaren/07_GT_Front_34_Dynamic-1:crop-16x9?wid=1920&hei=1080', title:"" , disconnect:"" },
+    { id: 2, src: 'https://storage.googleapis.com/pod_public/750/166579.jpg' },
+    { id: 3, src: 'https://hips.hearstapps.com/hmg-prod/images/2023-lamborghini-huracan-sterrato118-6467c8ee00627.jpg?crop=0.670xw:1.00xh;0.115xw,0&resize=1200:*' },
+    { id: 4, src: 'https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_og_01.jpg' },
+    {id: 5, src: 'https://www.ford.com/is/image/content/dam/na/ford/en_us/images/mustang/2025/dm/25_FRD_MST_60983.tif?croppathe=16x9&wid=1440&fmt=webp' },
+    {id: 6, src: 'https://carwow-uk-wp-2.imgix.net/2023-Koenigsegg-Jesko-Absolut-front.png?auto=format&cs=tinysrgb&fit=crop&h=800&ixlib=rb-1.1.0&q=60&w=1600' },
   ];
 
   return (

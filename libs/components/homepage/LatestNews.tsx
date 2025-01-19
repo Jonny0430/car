@@ -2,10 +2,10 @@ import { Box, Container, Grid, Card, CardContent, Typography, Button, Stack } fr
 
 // Kategoriya ma'lumotlari
 const categories = [
-  { title: "Mercedes-Benz ", image: '../img/news/mers.webp' }, // Use the uploaded image
-  { title: "Luxury", image: "../img/news/luxury.webp" },
-  { title: "Electric", image: "../img/news/electric.webp" },
-  { title: "Sports", image: "../img/news/sports.webp" },
+  { title: "Mercedes-Benz ", image: 'https://hips.hearstapps.com/hmg-prod/images/rt-mercedes-benz-cpo-1-1531414981.jpg' }, // Use the uploaded image
+  { title: "Luxury", image: "https://static1.topspeedimages.com/wordpress/wp-content/uploads/2023/09/2023-lexus-es-250-awd-luxury-side.jpg" },
+  { title: "Electric", image: "https://ev.aaa.com/wp-content/uploads/2024/09/Large-59604-2025IONIQ5N-768x512.jpg" },
+  { title: "Sports", image: "https://content.presspage.com/uploads/1523/d935c064-c73e-4d60-a6ce-a66d3808e8ae/c800_toyotaft-seext01.jpg?32807" },
 ];
 
 const LatestNews = () => {

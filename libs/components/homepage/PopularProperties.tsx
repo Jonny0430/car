@@ -83,7 +83,7 @@ const PopularProperties = (props: PopularPropertiesProps) => {
 						<Swiper
 							className={'popular-property-swiper'}
 							slidesPerView={'auto'}
-							spaceBetween={25}
+							spaceBetween={25} 	
 							modules={[Autoplay, Navigation, Pagination]}
 							navigation={{
 								nextEl: '.swiper-popular-next',

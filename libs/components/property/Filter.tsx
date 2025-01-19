@@ -739,7 +739,34 @@ const Filter = (props: FilterType) => {
 							<Typography className="propert-type">Rent</Typography>
 						</label>
 					</Stack>
-				</Stack>		
+				</Stack>
+				<Stack className={'find-your-home'}>
+				<Typography className={'title'}>Price Range</Typography>
+					<Stack className="square-year-input">
+						<input
+							type="number"
+							placeholder="$ min"
+							min={0}
+							value={searchFilter?.search?.pricesRange?.start ?? 0}
+							onChange={(e: any) => {
+								if (e.target.value >= 0) {
+									propertyPriceHandler(e.target.value, 'start');
+								}
+							}}
+						/>
+						<div className="central-divider"></div>
+						<input
+							type="number"
+							placeholder="$ max"
+							value={searchFilter?.search?.pricesRange?.end ?? 0}
+							onChange={(e: any) => {
+								if (e.target.value >= 0) {
+									propertyPriceHandler(e.target.value, 'end');
+								}
+							}}
+						/>
+					</Stack>
+					</Stack>
 				</Stack>
 		);
 	}
