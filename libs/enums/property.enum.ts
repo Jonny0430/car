@@ -11,6 +11,7 @@ export enum PropertyType {
 	SPORTS = 'SPORTS',
 	MERCEDES = 'MERCEDES',
 	BMW = 'BMW',
+	OTHER = 'OTHER'
 }
 
 export enum PropertyStatus {
