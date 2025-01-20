@@ -1,6 +1,7 @@
 #pc-wrap {
 	.home-page {
-		position: relative;
+		display: flex;
+		padding: 108px 0px 76px;
 		width: 100%;
 		height: auto;
 		background: #f6f6f6;
@@ -622,15 +623,15 @@
 							}
 						}
 						.info {
-							padding: 20px 22px 17px;
+							padding: 9px;
 							display: flex;
 							flex-direction: column;
 							box-sizing: border-box;
-							border-radius: 0px 0px 12px 12px;
-							border: 1px solid rgba(196, 196, 196, 0.71);
+							border-radius: 0px 0px 15px 15px;
+							border: 2px solid rgba(196, 196, 196, 0.71);
 							border-top: none;
 							background: #fff;
-							box-shadow: 0px 1px 4px 0px rgba(24, 26, 32, 0.07);
+							box-shadow: 0px 2px 6px 0px rgba(50, 30, 32, 0.07);
 							.title {
 								overflow: hidden;
 								color: #181a20;

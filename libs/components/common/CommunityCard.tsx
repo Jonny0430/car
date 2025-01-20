@@ -54,7 +54,7 @@ const CommunityCard = (props: CommunityCardProps) => {
 				onClick={(e: any) => chooseArticleHandler(e, boardArticle)}
 			>
 				<Stack className="image-box">
-					<img src={imagePath} alt="" className="card-img" />
+					<img src={'https://carwow-uk-wp-2.imgix.net/2023-Koenigsegg-Jesko-Absolut-front.png?auto=format&cs=tinysrgb&fit=crop&h=800&ixlib=rb-1.1.0&q=60&w=1600'} alt="" className="card-img" />
 				</Stack>
 				<Stack className="desc-box" sx={{ marginTop: '-20px' }}>
 					<Stack>

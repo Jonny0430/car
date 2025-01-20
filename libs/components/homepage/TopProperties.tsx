@@ -138,7 +138,7 @@ const TopProperties = (props: TopPropertiesProps) => {
 TopProperties.defaultProps = {
 	initialInput: {
 		page: 1,
-		limit: 8,
+		limit: 4,
 		sort: 'propertyRank',
 		direction: 'DESC',
 		search: {},
