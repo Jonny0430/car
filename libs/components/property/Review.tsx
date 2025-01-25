@@ -7,6 +7,7 @@ import Moment from 'react-moment';
 import { useRouter } from 'next/router';
 import { useReactiveVar } from '@apollo/client';
 import { userVar } from '../../../apollo/store';
+import HeaderFilter from '../homepage/HeaderFilter';
 
 interface ReviewProps {
 	comment: Comment;

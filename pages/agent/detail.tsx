@@ -23,6 +23,7 @@ import { GET_MEMBER, GET_PROPERTIES } from '../../apollo/user/query';
 import { T } from '../../libs/types/common';
 import { GET_COMMENTS } from '../../apollo/admin/query';
 import { Message } from '../../libs/enums/common.enum';
+import TopAgentCard from '../../libs/components/homepage/TopAgentCard';
 
 export const getStaticProps = async ({ locale }: any) => ({
 	props: {

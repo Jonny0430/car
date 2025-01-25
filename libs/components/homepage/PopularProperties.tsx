@@ -52,7 +52,7 @@ const PopularProperties = (props: PopularPropertiesProps) => {
 							className={'popular-property-swiper'}
 							slidesPerView={'auto'}
 							centeredSlides={true}
-							spaceBetween={25}
+							spaceBetween={20}
 							modules={[Autoplay]}
 						>
 							{popularProperties.map((property: Property) => {
@@ -83,7 +83,7 @@ const PopularProperties = (props: PopularPropertiesProps) => {
 						<Swiper
 							className={'popular-property-swiper'}
 							slidesPerView={'auto'}
-							spaceBetween={25} 	
+							spaceBetween={20} 	
 							modules={[Autoplay, Navigation, Pagination]}
 							navigation={{
 								nextEl: '.swiper-popular-next',
@@ -116,7 +116,7 @@ const PopularProperties = (props: PopularPropertiesProps) => {
 PopularProperties.defaultProps = {
 	initialInput: {
 		page: 1,
-		limit: 7,
+		limit: 9,
 		sort: 'propertyViews',
 		direction: 'DESC',
 		search: {},

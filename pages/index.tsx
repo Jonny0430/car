@@ -37,14 +37,16 @@ const Home: NextPage = () => {
 		return (
 			<Stack className={'home-page'}>
 				<TrendProperties />
-				
-				<Events />
-				<PopularProperties />
-				<Advertisement />				
-				<TopProperties />
 				<ImageGallery />
+				{/* <PopularProperties /> */}
+								
+				<TopProperties />
+				
+				
+				{/* <LatestNews /> */}
+				{/* <Events /> */}
+				<Advertisement />
 				<TopAgents />
-				<LatestNews />
 			</Stack>
 		);
 	}

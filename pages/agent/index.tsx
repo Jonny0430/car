@@ -15,6 +15,8 @@ import { GET_AGENTS } from '../../apollo/user/query';
 import { T } from '../../libs/types/common';
 import { sweetMixinErrorAlert, sweetTopSmallSuccessAlert } from '../../libs/sweetAlert';
 import { Messages } from '../../libs/config';
+import TopAgentCard from '../../libs/components/homepage/TopAgentCard';
+import TopAgents from '../../libs/components/homepage/TopAgents';
 
 export const getStaticProps = async ({ locale }: any) => ({
 	props: {
@@ -129,6 +131,8 @@ const AgentList: NextPage = ({ initialInput, ...props }: any) => {
 		return <h1>AGENTS PAGE MOBILE</h1>;
 	} else {
 		return (
+			<Stack>
+				<TopAgents/>
 			<Stack className={'agent-list-page'}>
 				<Stack className={'container'}>
 					<Stack className={'filter'}>
@@ -206,6 +210,7 @@ const AgentList: NextPage = ({ initialInput, ...props }: any) => {
 					</Stack>
 				</Stack>
 			</Stack>
+			</Stack>
 		);
 	}
 };
@@ -213,7 +218,7 @@ const AgentList: NextPage = ({ initialInput, ...props }: any) => {
 AgentList.defaultProps = {
 	initialInput: {
 		page: 1,
-		limit: 10,
+		limit: 4,
 		sort: 'createdAt',
 		direction: 'DESC',
 		search: {},

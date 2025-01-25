@@ -19,7 +19,7 @@
 					border-radius: 12px;
 					border: 1px solid rgba(196, 196, 196, 0.79);
 					background: #fff;
-					box-shadow: 0px 1px 4px 0px rgba(24, 26, 32, 0.07);
+					box-shadow: 9px 10px 1px 5px rgba(24, 26, 32, 0.07);
 					.image-info {
 						width: 100%;
 						flex-direction: row;
@@ -84,17 +84,20 @@
 						width: 100%;
 						height: auto;
 						.title-box {
-							width: 100%;
-							height: auto;
+							width: 200%;
+							height: 70px;
+							border-radius: 15px;
+							background: #f1efef;
 							flex-direction: row;
-							justify-content: space-between;
+							justify-content: space-around;
 							align-items: center;
 							margin-bottom: 45px;
+							margin-left: -54%;
 							.left {
 								width: 60%;
 								height: auto;
 								.title {
-									color: #000;
+									color: #E92C28;
 									font-family: $font;
 									font-size: 24px;
 									font-style: normal;
@@ -103,7 +106,7 @@
 									letter-spacing: 0.24px;
 								}
 								.sub-title {
-									color: #757575;
+									color: #E92C28;
 									font-family: $font;
 									font-size: 13px;
 									font-style: normal;

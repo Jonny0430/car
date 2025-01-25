@@ -1,7 +1,6 @@
 #pc-wrap {
 	.agent-list-page {
 		position: relative;
-		padding: 147px 0 75px;
 		width: 100%;
 		height: auto;
 		display: flex;
@@ -16,22 +15,26 @@
 				flex-direction: row;
 				justify-content: space-between;
 				align-items: center;
+				margin-left: 70%;
 				.left {
 					display: flex;
 					flex-direction: row;
+					margin-left: -260%;
+                    width: 270%;
 					input {
 						padding: 22px 10px;
-						width: 333px;
+						width: 90%;
 						height: 50px;
-						border-radius: 40px;
-						border: 1px solid #ddd;
-						background: #fff;
+						border-radius: 10px;
+						border: 1px solid #ddddddd3;
+						background: #f6f6f6;
 						color: #181a20;
-						font-family: $font;
+						font-family: Poppins, sans-serif;
 						font-size: 14px;
 						font-style: normal;
 						font-weight: 400;
 						line-height: 26px;
+						margin-right: -60px;
 						box-sizing: border-box;
 					}
 				}
@@ -56,14 +59,13 @@
 			.card-wrap {
 				position: relative;
 				margin-top: 35px;
-				width: 100%;
-				min-height: 500px;
+				margin-left: 50px;
+				width: 90%;
+				min-height: 300px;
 				height: auto;
 				display: flex;
 				flex-direction: row;
 				flex-wrap: wrap;
-				background: #fff;
-				box-shadow: 0 1px 6px 0 rgba(193, 51, 3, 0.99);
 			}
 			.pagination {
 				display: flex;
@@ -73,7 +75,7 @@
 					margin-top: 20px;
 					color: #181a20;
 					font-family: $font;
-					font-size: 14px;
+					font-size: 26px;
 					font-style: normal;
 					font-weight: 400;
 					line-height: 26px; /* 185.714% */
