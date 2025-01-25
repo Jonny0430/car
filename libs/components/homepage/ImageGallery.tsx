@@ -16,10 +16,10 @@ const ImageGallery = () => {
   const images = [
     { id: 1, src: 'https://pngimg.com/d/audi_PNG99491.png', title:"" , disconnect:"" },
     { id: 2, src: 'https://png.pngtree.com/png-clipart/20241204/original/pngtree-red-sports-car-png-image_17560805.png' },
-    { id: 3, src: 'https://hips.hearstapps.com/hmg-prod/images/2023-lamborghini-huracan-sterrato118-6467c8ee00627.jpg?crop=0.670xw:1.00xh;0.115xw,0&resize=1200:*' },
-    { id: 4, src: 'https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_og_01.jpg' },
-    { id: 5, src: 'https://www.ford.com/is/image/content/dam/na/ford/en_us/images/mustang/2025/dm/25_FRD_MST_60983.tif?croppathe=16x9&wid=1440&fmt=webp' },
-    { id: 6, src: 'https://carwow-uk-wp-2.imgix.net/2023-Koenigsegg-Jesko-Absolut-front.png?auto=format&cs=tinysrgb&fit=crop&h=800&ixlib=rb-1.1.0&q=60&w=1600' },
+    { id: 3, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Cm6oS22hfvVOSo3MTVAlBzTjTj1z6keVrpMTWmjSkz3RsqP8-rK-FotD5bkB5UiOT3A&usqp=CAU' },
+    { id: 4, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAw_PyRIB4xOJxY0vW9lnYk5mYejmAvuo3AQ&s' },
+    { id: 5, src: 'https://images.carandbike.com/car-images/colors/jaguar/f-type/jaguar-f-type-firenze-red.png?v=1589437010' },
+    { id: 6, src: 'https://pngimg.com/d/bugatti_PNG17.png' },
   ];
 
   return (
@@ -29,7 +29,7 @@ const ImageGallery = () => {
         slidesPerView={6} // Default for larger screens
         loop={true} // Make the slider loop
         autoplay={{
-          delay: 3000, // Adjust autoplay delay to 3 seconds
+          delay: 2000, // Adjust autoplay delay to 3 seconds
           disableOnInteraction: false, // Keep autoplay even on interaction
         }}
         pagination={{

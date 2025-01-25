@@ -49,23 +49,23 @@ body::-webkit-scrollbar {
 		.navbar {
 			.navbar-main {
 				position: fixed;
-				padding: 22px 0px;
+				padding: 22px 0;
 				width: 100%;
-				height: 87px;
+				height: 150px;
 				display: flex;
-				flex-direction: row;
 				box-sizing: border-box;
 				z-index: 99;
 				align-items: center;
-				border-top: 1px solid rgba(255, 255, 255, 0.07);
 				&.transparent {
-					background-color: #181a209e;
 					border-radius: 70px;
-					box-shadow: 0px 0px 9px 4px #121111c4;
 				}
 				.container {
+					border-radius: 15px;
 					flex-direction: row;
 					align-items: center;
+					height: 250px;
+					background-color: #eeeded;
+					color: #000;
 					justify-content: space-between;
 					.logo-box {
 						img {
@@ -82,8 +82,8 @@ body::-webkit-scrollbar {
 						justify-content: space-between;
 						div {
 							position: relative;
-							color: #eeeeeeed;
-							font-family: $font;
+							color: #3b3b3b;
+							font-family: Arial, sans-serif;
 							font-size: 15px;
 							font-style: normal;
 							font-weight: 600;
@@ -182,7 +182,7 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://static.vecteezy.com/system/resources/previews/026/992/802/non_2x/classic-modified-car-with-dark-smokie-background-ai-generative-free-photo.jpg');
+    background-image: url('https://images.unsplash.com/photo-1553440569-bcc63803a83d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D');
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -202,7 +202,7 @@ body::-webkit-scrollbar {
 				flex-direction: row;
 				justify-content: space-between;
 				background: rgba(255, 255, 255, 0.60);
-				box-shadow: 0px 0px 9px 4px #1a7beffa;
+				box-shadow: 0px 0px 9px 4px rgb(3 11 21 / 98%);
 				border-radius: 227px;
 				.select-box {
 					width: 712px;
@@ -691,7 +691,7 @@ body::-webkit-scrollbar {
 		display: flex;
 		flex-direction: row;
 		background-image: url("./../../public/naqish.jpg");
-		background: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+		background: #181a20;
 		.footer-container {
 			width: 1300px;
 			height: auto;

@@ -39,18 +39,19 @@
 			}
 		}
 		div.price {
-			position: absolute;
 			padding: 8px 12px;
 			left: 20px;
 			bottom: 20px;
 			border-radius: 6px;
-			background: #fff;
+			background: #f6f6f6;
 			color: #181a20;
 			font-family: $font;
 			font-size: 15px;
 			font-style: normal;
 			font-weight: 600;
 			line-height: normal;
+			width: 105%;
+			box-shadow:  0 1px 6px 0 rgba(20, 20, 20, 0.99);
 		}
 	}
 	.info {
@@ -62,7 +63,7 @@
 		border: 1px solid hsla(0, 0%, 77%, .71);
 		border-top: none;
 		background: #fff;
-		box-shadow: 0 1px 4px 0 rgba(24, 26, 32, .07);
+		box-shadow: 0 1px 6px 0 rgba(20, 20, 20, 0.99);
 		.title {
 			overflow: hidden;
 			color: #181a20;

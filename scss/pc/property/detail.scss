@@ -1,7 +1,7 @@
 #pc-wrap {
 	#property-detail-page {
 		position: relative;
-		background: #f6f6f6;
+		background: #fff;
 		padding-top: 87px;
 		padding-bottom: 200px;
 		.property-detail-config {
@@ -248,8 +248,8 @@
 						gap: 50px;
 						padding: 29px 38px 50px 38px;
 						border-radius: 12px;
-						box-shadow: 0 1px 6px 0 rgba(193, 51, 3, 0.99);
-						background: #fff;
+						box-shadow: 0 1px 6px 0 rgba(20, 20, 20, 0.99);
+						background: #f6f6f6;
 						.top {
 							width: 100%;
 							height: auto;
@@ -504,13 +504,13 @@
 					.leave-review-config {
 						border-radius: 12px;
 						border: 1px solid #c4c4c4;
-						background: #fff;
-						box-shadow: 0 1px 6px 0 rgba(193, 51, 3, 0.99);
+						background: #f6f6f6;
+						box-shadow: 0 1px 6px 0 rgba(20, 20, 20, 0.99);
 						padding: 30px 38px;
 						.main-title {
 							color: #181a20;
 							font-family: $font;
-							font-size: 17px;
+							font-size: 22px;
 							font-style: normal;
 							font-weight: 600;
 							line-height: normal;
@@ -575,8 +575,8 @@
 					gap: 20px;
 					border-radius: 12px;
 					border: 1px solid rgba(196, 196, 196, 0.79);
-					background: #fff;
-					box-shadow: 0 1px 6px 0 rgba(193, 51, 3, 0.99);
+					background: #f6f6f6;
+					box-shadow: 0 1px 6px 0 rgba(20, 20, 20, 0.99);
 					.info-box {
 						position: relative;
 						width: 100%;
