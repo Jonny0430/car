@@ -217,8 +217,8 @@ const AgentList: NextPage = ({ initialInput, ...props }: any) => {
 
 AgentList.defaultProps = {
 	initialInput: {
-		page: 1,
-		limit: 4,
+		page: 2,
+		limit: 8,
 		sort: 'createdAt',
 		direction: 'DESC',
 		search: {},

@@ -320,7 +320,7 @@ AgentDetail.defaultProps = {
 	},
 	initialComment: {
 		page: 1,
-		limit: 5,
+		limit: 8,
 		sort: 'createdAt',
 		direction: 'ASC',
 		search: {

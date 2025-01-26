@@ -11,6 +11,7 @@ import Advertisement from '../libs/components/homepage/Advertisement';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import LatestNews from '../libs/components/homepage/LatestNews';
 import ImageGallery from '../libs/components/homepage/ImageGallery';
+import ImageLogo from '../libs/components/homepage/ImageLogo';
 
 export const getStaticProps = async ({ locale }: any) => ({
 	props: {
@@ -39,14 +40,12 @@ const Home: NextPage = () => {
 				<TrendProperties />
 				<ImageGallery />
 				{/* <PopularProperties /> */}
-								
 				<TopProperties />
-				
-				
 				{/* <LatestNews /> */}
 				{/* <Events /> */}
 				<Advertisement />
 				<TopAgents />
+				<ImageLogo />
 			</Stack>
 		);
 	}
