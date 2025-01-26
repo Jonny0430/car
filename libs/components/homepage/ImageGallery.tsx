@@ -15,8 +15,8 @@ const ImageGallery = () => {
 
   const images = [
     { id: 1, src: 'https://pngimg.com/d/audi_PNG99491.png', title:"" , disconnect:"" },
-    { id: 2, src: 'https://png.pngtree.com/png-clipart/20241204/original/pngtree-red-sports-car-png-image_17560805.png' },
-    { id: 3, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Cm6oS22hfvVOSo3MTVAlBzTjTj1z6keVrpMTWmjSkz3RsqP8-rK-FotD5bkB5UiOT3A&usqp=CAU' },
+    { id: 2, src: 'https://i.pinimg.com/736x/05/02/da/0502da25d3a9640ad861574a516a4611.jpg' },
+    { id: 3, src: 'https://pngimg.com/d/mustang_PNG3.png' },
     { id: 4, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAw_PyRIB4xOJxY0vW9lnYk5mYejmAvuo3AQ&s' },
     { id: 5, src: 'https://images.carandbike.com/car-images/colors/jaguar/f-type/jaguar-f-type-firenze-red.png?v=1589437010' },
     { id: 6, src: 'https://pngimg.com/d/bugatti_PNG17.png' },
