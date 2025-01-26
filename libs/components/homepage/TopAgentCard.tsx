@@ -30,7 +30,6 @@ const TopAgentCard = (props: TopAgentProps) => {
 		return (
 			<Stack className="top-agent-card">
 				<img src={agentImage} alt="" />
-
 				<strong>{agent?.memberNick}</strong>
 				<span>{agent?.memberType}</span>
 			</Stack>

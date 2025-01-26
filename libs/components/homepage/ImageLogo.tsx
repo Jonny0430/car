@@ -53,8 +53,8 @@ const ImageLogo = () => {
                 src={image.src}
                 alt={image.src}
                 style={{
-                  width: '74%',
-                  height: '110px', // Maximal height for uniformity
+                  width: '60%',
+                  height: '100px', // Maximal height for uniformity
                   objectFit: 'cover', // Ensures images fit the container without distortion
                   borderRadius: '8px',
                 }}

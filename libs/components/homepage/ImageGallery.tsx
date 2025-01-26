@@ -53,8 +53,8 @@ const ImageGallery = () => {
                 src={image.src}
                 alt={image.src}
                 style={{
-                  width: '74%',
-                  height: '125px', // Maximal height for uniformity
+                  width: '65%',
+                  height: '105px', // Maximal height for uniformity
                   objectFit: 'cover', // Ensures images fit the container without distortion
                   borderRadius: '8px',
                 }}
