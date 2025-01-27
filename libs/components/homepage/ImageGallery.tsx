@@ -29,7 +29,7 @@ const ImageGallery = () => {
         slidesPerView={6} // Default for larger screens
         loop={true} // Make the slider loop
         autoplay={{
-          delay: 2000, // Adjust autoplay delay to 3 seconds
+          delay: 6000, // Adjust autoplay delay to 3 seconds
           disableOnInteraction: false, // Keep autoplay even on interaction
         }}
         pagination={{

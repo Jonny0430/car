@@ -711,6 +711,7 @@
 							  .swiper-wrapper {
 								display: flex;
 								justify-content: center; /* Cardlarni markazlashtirish */
+								animation-play-state:initial;
 							  }
 							  
 							  .card {

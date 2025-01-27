@@ -115,8 +115,6 @@ const TopAgents = (props: TopAgentsProps) => {
 							<span>Top Agents</span>
 						</Box>
 						<Box component={'div'} className={'right'}>
-							<div className={'more-box'}>
-							</div>
 						</Box>
 					</Stack>
 					<Stack className={'wrapper'}>
@@ -147,7 +145,11 @@ const TopAgents = (props: TopAgentsProps) => {
 								{topAgents.map((agent: Member) => {
 									return (
 										<SwiperSlide className={'top-agents-slide'} key={agent?._id}>
+											<div className={'more-box'}>
+											 <a href='/agent'>
 											<TopAgentCard agent={agent} key={agent?.memberNick} />
+											 </a>
+											 </div>
 										</SwiperSlide>
 									);
 								})}

@@ -14,6 +14,7 @@ import { userVar } from '../../apollo/store';
 import { Logout } from '@mui/icons-material';
 import { REACT_APP_API_URL } from '../config';
 import NotificationButton from './homepage/qongiroqcha'; // Import NotificationButton
+import Fond from './homepage/Fond';
 
 const Top = () => {
   const device = useDeviceDetect();
@@ -136,9 +137,6 @@ const Top = () => {
         <Link href={'/property'}>
           <div>{t('Properties')}</div>
         </Link>
-        <Link href={'/agent'}>
-          <div> {t('Agents')} </div>
-        </Link>
         <Link href={'/gallery'}>
           <div> {t('Gallery')} </div>
         </Link>
@@ -166,9 +164,6 @@ const Top = () => {
               </Link>
               <Link href={'/property'}>
                 <div>{t('Cars')}</div>
-              </Link>
-              <Link href={'/agent'}>
-                <div> {t('Agents')} </div>
               </Link>
               <Link href={'/gallery'}>
                 <div> {t('Gallery')} </div>
@@ -225,7 +220,6 @@ const Top = () => {
                   </Menu>
                 </>
               )}
-
               {/* Agar foydalanuvchi tizimga kirgan bo'lsa, NotificationButton ko'rsatiladi */}
               {user?._id && (
                 <NotificationButton />
@@ -247,7 +241,6 @@ const Top = () => {
                     )}
                   </Box>
                 </Button>
-
                 <StyledMenu anchorEl={anchorEl2} open={drop} onClose={langClose} sx={{ position: 'absolute' }}>
                   <MenuItem disableRipple onClick={langChoice} id="en">
                     <img
@@ -288,5 +281,4 @@ const Top = () => {
     );
   }
 };
-
 export default withRouter(Top);

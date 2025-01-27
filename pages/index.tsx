@@ -12,6 +12,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import LatestNews from '../libs/components/homepage/LatestNews';
 import ImageGallery from '../libs/components/homepage/ImageGallery';
 import ImageLogo from '../libs/components/homepage/ImageLogo';
+import Fond from '../libs/components/homepage/Fond';
 
 export const getStaticProps = async ({ locale }: any) => ({
 	props: {
@@ -37,6 +38,7 @@ const Home: NextPage = () => {
 	} else {
 		return (
 			<Stack className={'home-page'}>
+				<ImageLogo />
 				<TrendProperties />
 				<ImageGallery />
 				{/* <PopularProperties /> */}
@@ -45,7 +47,6 @@ const Home: NextPage = () => {
 				{/* <Events /> */}
 				<Advertisement />
 				<TopAgents />
-				<ImageLogo />
 			</Stack>
 		);
 	}
