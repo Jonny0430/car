@@ -119,9 +119,9 @@ const Top = () => {
       }}
     >
       <Box>
-        <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 1 }}>
+        <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
           {!user?._id ? (
-            <Link href={'/'}>
+            <Link href={'/account/join'}>
               <Button variant="text" sx={{ textAlign: 'left', color: '#fff' }}>
                 <AccountCircleOutlinedIcon sx={{ marginRight: 1, color: '#fff' }} />
                 {t('Login')} / {t('Register')}
