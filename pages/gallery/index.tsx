@@ -4,6 +4,8 @@ import axios from 'axios';
 import withLayoutBasic from '../../libs/components/layout/LayoutBasic';
 // import GalleryCard from '../../libs/components/gallery/GalleryCard';
 import Blog from '../../libs/components/gallery/Blog';
+import TopProperties from '../../libs/components/gallery/Blog';
+import TrendProperties from '../../libs/components/gallery/LatestNews';
 const GalleryPage = () => {
   
   return (
@@ -12,7 +14,7 @@ const GalleryPage = () => {
       <Stack spacing={2} textAlign="center">
           <Grid container spacing={2}>
               <Grid item xs={12} sm={6} md={4}>              
-                <Blog />
+                <TrendProperties /> 
               </Grid>
           </Grid>
       </Stack>

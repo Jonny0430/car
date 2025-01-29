@@ -1,162 +1,80 @@
 import React, { useState } from 'react';
 import { Stack, Box } from '@mui/material';
 import useDeviceDetect from '../../hooks/useDeviceDetect';
-import WestIcon from '@mui/icons-material/West';
-import EastIcon from '@mui/icons-material/East';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation, Pagination } from 'swiper';
 import { Property } from '../../types/property/property';
+import Link from 'next/link';
 import { PropertiesInquiry } from '../../types/property/property.input';
-import TrendPropertyCard from '../homepage/TrendPropertyCard';
-import { useMutation, useQuery } from '@apollo/client';
-import { T } from '../../types/common';
 import { GET_PROPERTIES } from '../../../apollo/user/query';
-import { LIKE_TARGET_PROPERTY } from '../../../apollo/user/mutation';
-import { sweetMixinErrorAlert, sweetTopSmallSuccessAlert } from '../../sweetAlert';
-import { Message } from '../../enums/common.enum';
+import { useQuery } from '@apollo/client';
+import { T } from '../../types/common';
+import PopularPropertyCard from '../homepage/PopularPropertyCard';
 
-interface TrendPropertiesProps {
+interface PopularPropertiesProps {
 	initialInput: PropertiesInquiry;
 }
 
-const TrendProperties = (props: TrendPropertiesProps) => {
+const PopularProperties = (props: PopularPropertiesProps) => {
 	const { initialInput } = props;
 	const device = useDeviceDetect();
-	const [trendProperties, setTrendProperties] = useState<Property[]>([]);
+	const [popularProperties, setPopularProperties] = useState<Property[]>([]);
 
 	/** APOLLO REQUESTS **/
-	const [likeTargetProperty] = useMutation(LIKE_TARGET_PROPERTY);
-
-	const {
-		loading: getPropertiesLoading,
+	const {loading: getPropertiesLoading,
 		data: getPropertiesData,
 		error: getPropertiesError,
 		refetch: getPropertiesRefetch,
-	} = useQuery(GET_PROPERTIES, {
+	} = useQuery(GET_PROPERTIES , {
 		fetchPolicy: 'cache-and-network',
-		variables: { input: initialInput },
+		variables: { input: initialInput},
 		notifyOnNetworkStatusChange: true,
 		onCompleted: (data: T) => {
-			setTrendProperties(data?.getProperties?.list);
-		},
-	});
-	/** HANDLERS **/
-	const likePropertyHandler = async (user: T, id: string) => {
-		try {
-			if (!id) return;
-			if (!user._id) throw new Error(Message.NOT_AUTHENTICATED);
-
-			//execute likeTargetProperty Mutation
-			await likeTargetProperty({
-				variables: { input: id },
-			});
-
-			//execute getPropertiesRefetch
-			await getPropertiesRefetch({ input: initialInput });
-
-			await sweetTopSmallSuccessAlert('success', 800);
-		} catch (err: any) {
-			console.log('ERROR, likePropertyHandler:', err.message);
-			sweetMixinErrorAlert(err.message).then();
+			setPopularProperties(data?.getProperties?.list)
 		}
-	};
+	})
+	
+	/** HANDLERS **/
 
-	if (trendProperties) console.log('trendProperties:', trendProperties);
-	if (!trendProperties) return null;
+	if (!popularProperties) return null;
 
-	if (device === 'mobile') {
-		return (
-			<Stack className={'trend-properties'}>
-				<Stack className={'container'}>
-					<Stack className={'info-box'}>
-						<span>Recently added</span>
-					</Stack>
-					<Stack className={'card-box'}>
-						{trendProperties.length === 0 ? (
-							<Box component={'div'} className={'empty-list'}>
-								Trends Empty
-							</Box>
-						) : (
-							<Swiper
-								className={'trend-property-swiper'}
-								slidesPerView={'auto'}
-								centeredSlides={true}
-								spaceBetween={15}
-								modules={[Autoplay]}
-							>
-								{trendProperties.map((property: Property) => {
-									return (
-										<SwiperSlide key={property._id} className={'trend-property-slide'}>
-											<TrendPropertyCard property={property} likePropertyHandler={likePropertyHandler} />
-										</SwiperSlide>
-									);
-								})}
-							</Swiper>
-						)}
-					</Stack>
+	return (
+		<Stack className={'popular-properties'}>
+			<Stack className={'container'}>
+				<Stack className={'info-box'}>
+					<Box component={'div'} className={'left'}>
+						<span>Popular Cars</span>
+						<p>Popularity is based on views</p>
+					</Box>
+				</Stack>
+				<Stack className={'card-box'}>
+					{popularProperties.length === 0 ? (
+						<Box component={'div'} className={'empty-list'}>
+							No popular cars available
+						</Box>
+					) : (
+						<Stack direction="row" spacing={2} flexWrap="wrap">
+							{popularProperties.map((property: Property) => {
+								return (
+									<Box key={property._id} className={'popular-property-card'}>
+										<PopularPropertyCard property={property} />
+									</Box>
+								);
+							})}
+						</Stack>
+					)}
 				</Stack>
 			</Stack>
-		);
-	} else {
-		return (
-			<Stack className={'trend-properties'}>
-				<Stack className={'container'}>
-					<Stack className={'info-box'}>
-						<Box component={'div'} className={'left'}>
-							<span>Recently added</span>
-							<p>Trend is based on likes</p>
-						</Box>
-						<Box component={'div'} className={'right'}>
-							<div className={'pagination-box'}>
-								<WestIcon className={'swiper-trend-prev'} />
-								<div className={'swiper-trend-pagination'}></div>
-								<EastIcon className={'swiper-trend-next'} />
-							</div>
-						</Box>
-					</Stack>
-					<Stack className={'card-box'}>
-						{trendProperties.length === 0 ? (
-							<Box component={'div'} className={'empty-list'}>
-								Trends Empty
-							</Box>
-						) : (
-							<Swiper
-								className={'trend-property-swiper'}
-								slidesPerView={'auto'}
-								spaceBetween={15}
-								modules={[Autoplay, Navigation, Pagination]}
-								navigation={{
-									nextEl: '.swiper-trend-next',
-									prevEl: '.swiper-trend-prev',
-								}}
-								pagination={{
-									el: '.swiper-trend-pagination',
-								}}
-							>
-								{trendProperties.map((property: Property) => {
-									return (
-										<SwiperSlide key={property._id} className={'trend-property-slide'}>
-											<TrendPropertyCard property={property} likePropertyHandler={likePropertyHandler} />
-										</SwiperSlide>
-									);
-								})}
-							</Swiper>
-						)}
-					</Stack>
-				</Stack>
-			</Stack>
-		);
-	}
+		</Stack>
+	);
 };
 
-TrendProperties.defaultProps = {
+PopularProperties.defaultProps = {
 	initialInput: {
 		page: 1,
-		limit: 3,
-		sort: 'propertyLikes',
+		limit: 8,
+		sort: 'propertyViews',
 		direction: 'DESC',
 		search: {},
 	},
 };
 
-export default TrendProperties;
+export default PopularProperties;

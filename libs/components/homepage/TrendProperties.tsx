@@ -137,7 +137,9 @@ const TrendProperties = (props: TrendPropertiesProps) => {
 								{trendProperties.map((property: Property) => {
 									return (
 										<SwiperSlide key={property._id} className={'trend-property-slide'}>
+											<a href='/gallery' >
 											<TrendPropertyCard property={property} likePropertyHandler={likePropertyHandler} />
+											</a>
 										</SwiperSlide>
 									);
 								})}

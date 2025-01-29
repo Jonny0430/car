@@ -4,6 +4,7 @@
       align-items: center;
       justify-content: space-between;
       margin-left: 368px;
+      flex-direction: column-reverse;
     
       @media screen and (max-width: 978px) {
         flex-wrap: wrap;

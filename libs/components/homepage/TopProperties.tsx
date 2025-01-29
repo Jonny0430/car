@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Stack, Box } from '@mui/material';
+import { Stack, Box, Link } from '@mui/material';
 import useDeviceDetect from '../../hooks/useDeviceDetect';
 import WestIcon from '@mui/icons-material/West';
 import EastIcon from '@mui/icons-material/East';
@@ -67,8 +67,13 @@ const TopProperties = (props: TopPropertiesProps) => {
 			<Stack className={'top-properties'}>
 				<Stack className={'container'}>
 					<Stack className={'info-box'}>
+						<a href='/gallery'>
 						<span>Top properties</span>
+						</a>
 					</Stack>
+					<Link href={'/gallery'}>
+						
+					</Link>
 					<Stack className={'card-box'}>
 						<Swiper
 							className={'top-property-swiper'}
@@ -95,8 +100,10 @@ const TopProperties = (props: TopPropertiesProps) => {
 				<Stack className={'container'}>
 					<Stack className={'info-box'}>
 						<Box component={'div'} className={'left'}>
+						<a href='/gallery'>
 							<span>Top properties</span>
 							<p>Check out our Top Properties</p>
+						</a>
 						</Box>
 						<Box component={'div'} className={'right'}>
 							<div className={'pagination-box'}>
@@ -123,7 +130,9 @@ const TopProperties = (props: TopPropertiesProps) => {
 							{topProperties.map((property: Property) => {
 								return (
 									<SwiperSlide className={'top-property-slide'} key={property?._id}>
+										<a href='/gallery'>
 										<TopPropertyCard property={property} likePropertyHandler={likePropertyHandler}/>
+										</a>
 									</SwiperSlide>
 								);
 							})}
