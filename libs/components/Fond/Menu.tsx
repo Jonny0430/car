@@ -7,7 +7,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import { Property } from '../../types/property/property';
 import { PropertiesInquiry } from '../../types/property/property.input';
-import TrendPropertyCard from './TrendPropertyCard';
 import { useMutation, useQuery } from '@apollo/client';
 import { T } from '../../types/common';
 import { GET_PROPERTIES } from '../../../apollo/user/query';
@@ -15,6 +14,7 @@ import { LIKE_TARGET_PROPERTY } from '../../../apollo/user/mutation';
 import { sweetMixinErrorAlert, sweetTopSmallSuccessAlert } from '../../sweetAlert';
 import { Message } from '../../enums/common.enum';
 import { width } from '@mui/system';
+import TrendPropertyCard from '../homepage/TrendPropertyCard';
 
 interface TrendPropertiesProps {
 	initialInput: PropertiesInquiry;

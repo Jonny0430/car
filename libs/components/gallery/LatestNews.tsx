@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Stack, Box, Button } from '@mui/material';
+import { Stack, Box } from '@mui/material';
 import useDeviceDetect from '../../hooks/useDeviceDetect';
 import WestIcon from '@mui/icons-material/West';
 import EastIcon from '@mui/icons-material/East';
@@ -7,14 +7,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import { Property } from '../../types/property/property';
 import { PropertiesInquiry } from '../../types/property/property.input';
-import TrendPropertyCard from './TrendPropertyCard';
+import TrendPropertyCard from '../homepage/TrendPropertyCard';
 import { useMutation, useQuery } from '@apollo/client';
 import { T } from '../../types/common';
 import { GET_PROPERTIES } from '../../../apollo/user/query';
 import { LIKE_TARGET_PROPERTY } from '../../../apollo/user/mutation';
 import { sweetMixinErrorAlert, sweetTopSmallSuccessAlert } from '../../sweetAlert';
 import { Message } from '../../enums/common.enum';
-import { width } from '@mui/system';
 
 interface TrendPropertiesProps {
 	initialInput: PropertiesInquiry;
@@ -69,7 +68,7 @@ const TrendProperties = (props: TrendPropertiesProps) => {
 		return (
 			<Stack className={'trend-properties'}>
 				<Stack className={'container'}>
-					<Stack className={'info-box'} sx={{width: '50%'}}>
+					<Stack className={'info-box'}>
 						<span>Recently added</span>
 					</Stack>
 					<Stack className={'card-box'}>

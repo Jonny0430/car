@@ -582,7 +582,7 @@ const PropertyDetail: NextPage = ({ initialComment, ...props }: any) => {
 									<iframe
 										style={{ marginTop: "60px" }}
 										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25867.098915951767!2d128.68632810247993!3d35.86402299180927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35660bba427bf179%3A0x1fc02da732b9072f!2sGeumhogangbyeon-ro%2C%20Dong-gu%2C%20Daegu!5e0!3m2!1suz!2skr!4v1695537640704!5m2!1suz!2skr"
-										width="1320"
+										width="1200"
 										height="500"
 										referrerPolicy="no-referrer-when-downgrade"
 										title="Google Map"

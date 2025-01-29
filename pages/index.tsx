@@ -9,10 +9,11 @@ import TopProperties from '../libs/components/homepage/TopProperties';
 import { Stack } from '@mui/material';
 import Advertisement from '../libs/components/homepage/Advertisement';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import LatestNews from '../libs/components/homepage/LatestNews';
+import LatestNews from '../libs/components/gallery/LatestNews';
 import ImageGallery from '../libs/components/homepage/ImageGallery';
 import ImageLogo from '../libs/components/homepage/ImageLogo';
 import Fond from '../libs/components/homepage/Fond';
+
 
 export const getStaticProps = async ({ locale }: any) => ({
 	props: {
@@ -31,7 +32,7 @@ const Home: NextPage = () => {
 				<Advertisement />
 				<TopProperties />
 				<TopAgents />
-				<LatestNews />
+				{/* <LatestNews /> */}
 				<ImageGallery />
 			</Stack>
 		);
