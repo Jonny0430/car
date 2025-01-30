@@ -48,7 +48,7 @@ const ImageLogo = () => {
       >
         {images.map((image) => (
           <SwiperSlide key={image.id}>
-            <Box sx={{ position: 'relative', overflow: 'hidden', borderRadius: 2 }}>
+            <Box sx={{ position: 'relative', overflow: 'hidden', borderRadius: 2}}>
               <img
                 src={image.src}
                 alt={image.src}

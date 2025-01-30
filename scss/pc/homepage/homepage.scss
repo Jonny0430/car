@@ -377,7 +377,6 @@
 	}
 	.home {
 		background: #007bff;
-		font-size: 20%;
 	}
   }
   
@@ -462,12 +461,13 @@
 								left: 20px;
 								bottom: 20px;
 								border-radius: 6px;
-								background: #fff;
+								background:  #ebede7;
 								color: #181a20;
 								font-family: $font;
 								font-size: 15px;
 								font-style: normal;
 								font-weight: 600;
+								width: 28%;
 								line-height: normal;
 							}
 						}

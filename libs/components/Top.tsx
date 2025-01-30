@@ -108,7 +108,7 @@ const Top = () => {
     <Box
       className="sidebar"
       sx={{
-        width: 250,
+        width: 280,
         height: '100vh',
         backgroundColor: '#181a20',
         position: 'fixed',
