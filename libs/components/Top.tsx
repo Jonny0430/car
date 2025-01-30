@@ -80,9 +80,9 @@ const Top = () => {
       borderRadius: 6,
       marginTop: theme.spacing(1),
       minWidth: 160,
-      color: theme.palette.mode === 'light' ? 'rgb(55, 65, 81)' : theme.palette.grey[300],
+      color: theme.palette.mode === 'light' ? 'rgb(105, 227, 113)' : theme.palette.grey[300],
       boxShadow:
-        'rgb(138, 108, 108) 0px 0px 0px 0px, rgb(138, 108, 108) 0px 0px 0px 0px,rgb(138, 108, 108) 0px 0px 0px 0px',
+        'rgb(237, 218, 173) 0px 0px 0px 0px, rgb(237, 218, 173) 0px 0px 0px 0px,rgb(237, 218, 173) 0px 0px 0px 0px',
       '& .MuiMenu-list': {
         padding: '4px 0',
       },
@@ -196,8 +196,7 @@ const Top = () => {
       </Box>
 
       {/* Navigation Links */}
-   {/* Navigation Links */}
-<Box sx={{ display: 'flex', flexDirection: 'column', gap: 4, marginTop: '130px' }}>
+<Box sx={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: '130px' }}>
   <Link href={'/'}>
       <img
         src='https://cdn-icons-png.flaticon.com/128/25/25694.png'

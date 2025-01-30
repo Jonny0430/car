@@ -43,7 +43,7 @@ const NotificationButton = () => {
 const style = {
   position: 'absolute' as 'absolute',
   top: '14%',
-  left: '75%',
+  marginLeft: '27%',
   transform: 'translate(-50%, -50%)',
   width: '350px',
   height: '15%',
