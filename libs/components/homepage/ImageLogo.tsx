@@ -69,6 +69,7 @@ const ImageLogo = () => {
                   background: 'rgba(0, 0, 0, 0.5)',
                   color: 'white',
                   textAlign: 'center',
+                  marginLeft:' 20px',
                 }}
               >
                 <Typography variant="h6">{image.title}</Typography>

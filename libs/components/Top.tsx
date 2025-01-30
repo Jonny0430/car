@@ -13,6 +13,7 @@ import Link from 'next/link';
 import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
 import { Logout } from '@mui/icons-material';
 import NotificationButton from './homepage/qongiroqcha'; // Import NotificationButton
+import { fontSize, height } from '@mui/system';
 
 const Top = () => {
   const { t } = useTranslation('common');
@@ -23,6 +24,10 @@ const Top = () => {
   const drop = Boolean(anchorEl2);
   const [logoutAnchor, setLogoutAnchor] = useState<null | HTMLElement>(null);
   const logoutOpen = Boolean(logoutAnchor);
+  const StyledImage = styled('img')({
+    width: '20%',
+    filter: 'brightness(0) invert(1)',
+  });
 
   useEffect(() => {
     const jwt = getJwtToken();
@@ -191,26 +196,48 @@ const Top = () => {
       </Box>
 
       {/* Navigation Links */}
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4, marginTop: '130px' }}>
-        <Link href={'/'}>
-          <Button variant="text" sx={{ textAlign: 'left', color: '#fff' }}>{t('Home')}</Button>
-        </Link>
-        <Link href={'/property'}>
-          <Button variant="text" sx={{ textAlign: 'left', color: '#fff' }}>{t('Cars')}</Button>
-        </Link>
-        <Link href={'/community?articleCategory=FREE'}>
-          <Button variant="text" sx={{ textAlign: 'left', color: '#fff' }}>{t('Community')}</Button>
-        </Link>
-        {user?._id && (
-          <Link href={'/mypage'}>
-            <Button variant="text" sx={{ textAlign: 'left', color: '#fff' }}>{t('My Page')}</Button>
-          </Link>
-        )}
-        <Link href={'/cs'}>
-          <Button variant="text" sx={{ textAlign: 'left', color: '#fff' }}>{t('CS')}</Button>
-        </Link>
-        <Link href={'/gallery'}></Link>
-      </Box>
+   {/* Navigation Links */}
+<Box sx={{ display: 'flex', flexDirection: 'column', gap: 4, marginTop: '130px' }}>
+  <Link href={'/'}>
+      <img
+        src='https://cdn-icons-png.flaticon.com/128/25/25694.png'
+        style={{ width: '20%', filter: 'brightness(0) invert(1)' }}
+      />
+    <Button variant="text" sx={{ textAlign: 'left', color: '#fff' }}>{t('Home')}</Button>
+  </Link>
+  <Link href={'/property'}>
+    <img
+      src='https://cdn-icons-png.flaticon.com/128/5755/5755277.png'
+      style={{ width: '20%', filter: 'brightness(0) invert(1)' }}
+    />
+    <Button variant="text" sx={{ textAlign: 'left', color: '#fff' }}>{t('Cars')}</Button>
+  </Link>
+  <Link href={'/community?articleCategory=FREE'}>
+    <img
+      src='https://cdn-icons-png.flaticon.com/128/4350/4350908.png'
+      style={{ width: '20%', filter: 'brightness(0) invert(1)' }}
+    />
+    <Button variant="text" sx={{ textAlign: 'left', color: '#fff' }}>{t('Community')}</Button>
+  </Link>
+  {user?._id && (
+    <Link href={'/mypage'}>
+      <img
+        src='https://cdn-icons-png.flaticon.com/128/18782/18782371.png'
+        style={{ width: '20%', filter: 'brightness(0) invert(1)' }}
+      />
+      <Button variant="text" sx={{ textAlign: 'left', color: '#fff' }}>{t('My Page')}</Button>
+    </Link>
+  )}
+  <Link href={'/cs'}>
+  <img
+    src='https://cdn-icons-png.flaticon.com/128/11563/11563220.png'
+    style={{ width: '20%', filter: 'brightness(0) invert(1)' }}
+    />
+    <Button variant="text" sx={{ textAlign: 'left', color: '#fff' }}>{t('CS')}</Button>
+  </Link>
+  <Link href={'/gallery'}></Link>
+</Box>
+
 
       <Divider sx={{ marginY: 2 }} />
     </Box>
