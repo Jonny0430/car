@@ -2,72 +2,51 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import useDeviceDetect from '../hooks/useDeviceDetect';
-import { Stack, Box } from '@mui/material';
+import { Stack, Box, Typography, useMediaQuery, useTheme } from '@mui/material';
 import moment from 'moment';
 
 const Footer = () => {
-	const device = useDeviceDetect();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm')); // Check if screen size is mobile
 
-	if (device == 'mobile') {
-		return (
-			<Stack className={'footer-container'}>
-				<Stack className={'main'}>
-					<Stack className={'left'}>
-						<Box component={'div'} className={'footer-box'}>
-							<div className={'media-box'}>
-								<FacebookOutlinedIcon />
-								<TelegramIcon />
-								<InstagramIcon />
-								<TwitterIcon />
-							</div>
-						</Box>
-					</Stack>
-					<Stack className={'right'}>
-						<Box component={'div'} className={'bottom'}>
-						</Box>
-					</Stack>
-				</Stack>
-				<Stack className={'second'}>
-					<span>©DriveX  - All rights reserved. DriveX {moment().year()}</span>
-				</Stack>
-			</Stack>
-		);
-	} else {
-		return (
-			<Stack className={'footer-container'}>
-				<Stack className={'main'}>
-					<Stack className={'left'}>
-						<Box component={'div'} className={'footer-box'}>
-							
-						</Box>
-						<Box component={'div'} className={'footer-box'}>
-						</Box>
-						<Box component={'div'} className={'footer-box'}>
-						</Box>
-						<Box component={'div'} className={'footer-box'}>
-							<div className={'media-box'}>
-								<FacebookOutlinedIcon />
-								<TelegramIcon />
-								<InstagramIcon />
-								<TwitterIcon />
-							</div>
-						</Box>
-					</Stack>
-					<Stack className={'right'}>
-						<Box component={'div'} className={'top'}>
-						</Box>
-						<Box component={'div'} className={'bottom'}>
-						</Box>
-					</Stack>
-				</Stack>
-				<Stack className={'second'}>
-					<span>© DriveX - All rights reserved. DriveX {moment().year()}</span>
-					<span>Privacy · Terms · Sitemap</span>
-				</Stack>
-			</Stack>
-		);
-	}
+  return (
+    <Box sx={{ backgroundColor: '#181a20', padding: '8px', marginLeft: '85%' }}>
+      <Stack
+        direction={isMobile ? 'column' : 'row'}
+        spacing={2}
+        justifyContent="center"
+        alignItems="center"
+        sx={{ height: '100%' }}
+      >
+        <Box 
+          textAlign="left" 
+          sx={{ marginTop: isMobile ? 2 : 0, display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: isMobile ? 0 : '-25%' }}
+        >
+          {/* Social media icons */}
+          <Stack 
+            direction="row" 
+            spacing={2} 
+            justifyContent="center" 
+            color="#fff"
+
+          >
+            <FacebookOutlinedIcon />
+            <TelegramIcon />
+            <InstagramIcon />
+            <TwitterIcon />
+          </Stack>
+        </Box>
+
+        {isMobile && (
+          <Box textAlign="center">
+            <Typography variant="body2" color="textSecondary">
+              Privacy · Terms · Sitemap
+            </Typography>
+          </Box>
+        )}
+      </Stack>
+    </Box>
+  );
 };
 
 export default Footer;
