@@ -170,6 +170,7 @@
 .agent-general-card {
 	position: relative;
     margin-right: 27px;
+	width: 295px;
     margin-bottom: 34px;
     display: flex;
     flex-direction: column;
@@ -180,32 +181,36 @@
     transition: transform .3s, box-shadow .3s;
 	.agent-img {
 	border-radius: 12px;
-    width: 236px;
-    height: 200px;
+    width: 296px;
+    height: 273px;
     background-size: cover;
     background-position: 50%;
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    transition: transform .3s;
+    transition: transform .4s;
 		div {
 			position: absolute;
 			padding: 5px;
-			top: 12px;
-			left: 12px;
+			display: flex;
+			top: 241px;
+			left: 8px;
 			border-radius: 9px;
-			background: #06aaa2;
+			background: #0639aa;
 			color: #fff;
-			font-family: $font;
+			font-family: "Poppins", sans-serif;
 			font-size: 12px;
 			font-style: normal;
 			font-weight: 600;
 			line-height: normal;
+			flex-wrap: nowrap;
 		}
 	}
 	.agent-desc {
 		display: flex;
+		padding: 10px;
 		justify-content: space-between;
+		flex-direction: row;
 		align-items: center;
 		.agent-info {
 			display: flex;
@@ -234,6 +239,7 @@
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
+			margin-left: -180px;
 			svg {
 				width: 24px;
 				height: 24px;

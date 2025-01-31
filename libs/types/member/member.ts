@@ -3,8 +3,6 @@ import { MeLiked, TotalCounter } from '../property/property';
 import { MeFollowed } from '../follow/follow';
 
 export interface Member {
-    name: any;
-    profileImage: string;
 	_id: string;
 	memberType: MemberType;
 	memberStatus: MemberStatus;
