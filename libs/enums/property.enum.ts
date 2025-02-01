@@ -1,9 +1,3 @@
-// export enum PropertyType {
-// 	APARTMENT = 'APARTMENT',
-// 	VILLA = 'VILLA',
-// 	HOUSE = 'HOUSE',
-// }
-
 export enum PropertyType {
 	SKODA = 'SKODA',
 	WALLPAPER = 'WALLPAPER', 

@@ -21,7 +21,7 @@ const fadeIn = keyframes`
   }
   100% {
 	opacity: 1;
-	transform: translateY(0);
+	transform: translateY(1.5);
   }
 `;
 
@@ -176,5 +176,3 @@ TopAgents.defaultProps = {
 };
 
 export default TopAgents;
-
-

@@ -1,22 +1,3 @@
-// import React from 'react';
-
-// interface FondProps {
-//   darkMode: boolean;
-//   setDarkMode: (mode: boolean) => void;
-// }
-
-// const Fond = ({ darkMode, setDarkMode }: FondProps) => {
-//   return (
-//     <div>
-//       <h1>{darkMode ? 'Dark Mode' : 'Light Mode'}</h1>
-//       <button onClick={() => setDarkMode(!darkMode)}>
-//         Toggle Mode
-//       </button>
-//     </div>
-//   );
-// };
-
-// export default Fond;
 import { useState } from 'react';
 import { Box, Button, Modal, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
