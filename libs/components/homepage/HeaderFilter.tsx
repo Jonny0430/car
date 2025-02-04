@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { Stack, Box, Modal, Divider, Button } from '@mui/material';
+import { Stack, Box,Divider, Button, Modal, Drawer } from '@mui/material';
 import useDeviceDetect from '../../hooks/useDeviceDetect';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CloseIcon from '@mui/icons-material/Close';
@@ -343,8 +343,7 @@ const HeaderFilter = (props: HeaderFilterProps) => {
 				</Stack>
 
 				{/* ADVANCED FILTER MODAL */}
-				<Modal
-				>
+				<Drawer>
 					<Box sx={style}>
 						<Box className={'advanced-filter-modal'}>
 							<div className={'close'} onClick={() => advancedFilterHandler(false)}>
@@ -375,7 +374,7 @@ const HeaderFilter = (props: HeaderFilterProps) => {
 							</div>
 						</Box>
 					</Box>
-				</Modal>
+				</Drawer>
 			</>
 		);
 	}

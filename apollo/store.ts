@@ -1,5 +1,4 @@
 import { makeVar } from '@apollo/client';
-
 import { CustomJwtPayload } from '../libs/types/customJwtPayload';
 export const themeVar = makeVar({});
 
@@ -22,6 +21,7 @@ export const userVar = makeVar<CustomJwtPayload>({
 	memberViews: 0,
 	memberWarnings: 0,
 	memberBlocks: 0,
+	name: undefined
 });
 
 

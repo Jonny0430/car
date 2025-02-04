@@ -33,7 +33,8 @@ interface PISearch {
 }
 
 export interface PropertiesInquiry {
-	page: number 
+	sort: string;
+	page: number ;
 	limit: number;
 	direction?: Direction;
 	search: PISearch;

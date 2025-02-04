@@ -1,6 +1,7 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
-import { Box, Button, Pagination, Stack, Typography } from '@mui/material';
+import { Box,  Pagination, Stack, Typography } from '@mui/material';
 import useDeviceDetect from '../../hooks/useDeviceDetect';
+import { Button } from '@mui/material'
 import { useRouter } from 'next/router';
 import { FollowInquiry } from '../../types/follow/follow.input';
 import { Follower } from '../../types/follow/follow';
@@ -136,7 +137,7 @@ const MemberFollowers = (props: MemberFollowsProps) => {
 												<Button
 													variant="outlined"
 													sx={{ background: '#ed5858', ':hover': { background: '#ee7171' } }}
-													oonClick={() =>
+													onClick={() =>
 														unsubscribeHandler(follower?.followerData?._id, getMemberFollowersRefetch, followInquiry)
 													}
 												>

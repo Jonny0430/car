@@ -149,7 +149,7 @@ const MemberFollowings = (props: MemberFollowingsProps) => {
 											<Button
 												variant="contained"
 												sx={{ background: '#60eb60d4', ':hover': { background: '#60eb60d4' } }}
-												oonClick={() =>
+												onClick={() =>
 													subscribeHandler(follower?.followingData?._id, getMemberFollowingsRefetch, followInquiry)
 												}
 											>
